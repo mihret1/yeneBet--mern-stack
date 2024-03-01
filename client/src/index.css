@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+.selam{
+    position: relative;
+    /* background-color: black; */
+
+}
+
+.selam::before{
+    content: '';
+    background-image: url('../src/assets/c3.jpg');
+    background-size: cover;
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+}
+
+.hede,.he{
+    isolation: isolate;
+}
