@@ -3,12 +3,12 @@ import Navbar from '../components/Navbar'
 
 function Home() {
   return (
-    <div className='h-4000px'>
-    <section className="selam h-[700px]  bg-no-repeat" >
+    <div className='h-[4000px]'>
+    <section className="selam h-[680px]  bg-no-repeat" >
           <Navbar />
      
 
-         <h1 className='he font-bold text-3xl text-center'> heloo this world </h1>
+         <h1 className='he font-bold text-3xl text-center text-white relative top-20'> helloo this world </h1>
   </section>
 
   </div>
