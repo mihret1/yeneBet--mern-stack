@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <>
-    <div className={`hede  fixed w-[100%] flex flex-row  h-[93px] items-center  justify-between px-10 ${isTrasparent && 'shadow-2xl'} ${isTrasparent? 'bg-white' :'bg-transparent'} `}>
+    <div className={`hede  ${isTrasparent &&  'fixed'} w-[100%] flex flex-row  h-[93px] items-center  justify-between px-10 ${isTrasparent && 'shadow-2xl'} ${isTrasparent? 'bg-white' :'bg-transparent'} `}>
 
       <a href='/'>
       <div className='flex items-center gap-1'>
