@@ -14,13 +14,13 @@ function Home() {
   
   return (
     <div className='h-[4000px]'>
-      <section className="selam h-[630px]  bg-no-repeat" >
+      <section className="selam h-[630px] max-ml:h-[700px] bg-no-repeat" >
           <Navbar />
           <div className='he flex flex-col items-center px-[15%] gap-7 pt-[4%]'>
             <h1 className=' font-bold text-3xl text-center text-white '> Sale Buy and Rent Your Gorgeous Dream Houses in Ethiopia</h1>
              <p className='text-white font-medium text-center text-lg'> Sale, buy and rent beutifull and secured houses in ethiopia in wherever you want in addis abeba.
                 you dont need waste your time and energy just for looking your home, we will do it for you honestly!
-              </p>
+             </p>
           
            <div className=''>
            <button onClick={()=>setIsDrop((e)=>!e)} className='he   bg-[#ff6900] px-5 py-1 rounded-full font-bold text-2xl'> Rent <ArrowDropDownIcon fontSize='large' /></button>
@@ -39,10 +39,10 @@ function Home() {
           
           </div>
          
-          <div className='hede flex flex-col items-center gap-6 mt-16'>
+          <div className='hede flex flex-col items-center gap-6 mt-16 max-ml:gap-3 max-ml:mt-5'>
             <h1 className='he  text-white font-semibold  text-2xl'>Get Your Type</h1>
             
-            <div className='flex flex-row gap-5 text-white text-lg font-semibold'>
+            <div className='flex flex-row  max-ml:grid max-ml:grid-cols-2  max-ml:gap-1 gap-5 text-white text-lg font-semibold max-ml:text-md max-sm:text-sm'>
               <span>
                 <a href='/' onMouseOver={()=>setType(1)} onMouseLeave={()=>setType(0)}>Normal House</a>
                 {type ===1 && <div className='h-1 rounded-lg bg-white mt-1 '></div>}
@@ -68,8 +68,8 @@ function Home() {
               </span>  
             </div>
 
-            <div className='he h-20 bg-white shadow-xl  flex  flex-row p-5' >
-              <div className='border-black border-2 w-96 h-10 flex flex-row justify-center items-center '>
+            <div className='he h-20 bg-white shadow-xl  flex  flex-row p-5 sm:max-ml:px-2  max-sm:flex-col max-sm:h-32 max-sm:gap-2' >
+              <div className='border-black border-2 w-96 sm:max-lg:w-64 h-10 flex flex-row justify-center items-center '>
                {!location && <SearchSharpIcon /> }
                 <input 
                 onChange={(e)=>setLocation(e.target.value)}
@@ -78,7 +78,7 @@ function Home() {
                 style={{ outline:'none',fontWeight:'bolder', color:'black' }}/>
                 {location &&<IconButton onClick={()=>setLocation('')}> <CloseIcon /></IconButton>}
               </div>
-              <div className='border-black border-2 w-96 h-10  flex flex-row justify-center items-center font-semibold'>
+              <div className='border-black border-2 w-96 sm:max-lg:w-64 h-10  flex flex-row sm:max-ml:justify-start justify-center items-center font-semibold'>
               <input
                 value={money}
                 onChange={(e)=>setMoney(e.target.value)} 
@@ -87,8 +87,10 @@ function Home() {
                 {money &&<IconButton onClick={()=>setMoney('')}> <CloseIcon /></IconButton>}
 
               </div>              
-              <button className='bg-[#ff6900] px-7 font-semibold text-xl ml-1 '>Search</button>
+              <button className='bg-[#ff6900] px-7 sm:max-ml:px-3 font-semibold text-xl ml-1 '>Search</button>
             </div>
+
+
 
           </div>
 
