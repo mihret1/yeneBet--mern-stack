@@ -13,19 +13,20 @@ function Home() {
   const [type,setType]=useState(0)
   
   return (
-    <div className='h-[4000px]'>
-      <section className="selam h-[630px] max-ml:h-[700px] bg-no-repeat" >
-          <Navbar />
-          <div className='he flex flex-col items-center px-[15%] gap-7 pt-[4%]'>
+    <div className='flex flex-col gap-24'>
+      <section className="partOne h-[630px] max-ml:h-[700px] bg-no-repeat" >
+       <Navbar />
+       <div className='insideOne'>
+          <div className=' flex flex-col items-center px-[15%] gap-7 pt-[4%]'>
             <h1 className=' font-bold text-3xl text-center text-white '> Sale Buy and Rent Your Gorgeous Dream Houses in Ethiopia</h1>
              <p className='text-white font-medium text-center text-lg'> Sale, buy and rent beutifull and secured houses in ethiopia in wherever you want in addis abeba.
                 you dont need waste your time and energy just for looking your home, we will do it for you honestly!
              </p>
           
            <div className=''>
-           <button onClick={()=>setIsDrop((e)=>!e)} className='he   bg-[#ff6900] px-5 py-1 rounded-full font-bold text-2xl'> Rent <ArrowDropDownIcon fontSize='large' /></button>
+           <button onClick={()=>setIsDrop((e)=>!e)} className=' bg-[#ff6900] px-5 py-1 rounded-full font-bold text-2xl'> Rent <ArrowDropDownIcon fontSize='large' /></button>
           
-            { isDrop &&  <div className=' he bg-white w-[100px] py-1 flex flex-col items-center text-center ml-[18%] '>
+            { isDrop &&  <div className=' bg-white w-[100px] py-1 flex flex-col items-center text-center ml-[18%] '>
                <ul >
                   <li><a href='/auth'>Sale/rented</a></li>
                   <li><a href='/auth'>Rent/buy</a></li>
@@ -39,8 +40,8 @@ function Home() {
           
           </div>
          
-          <div className='hede flex flex-col items-center gap-6 mt-16 max-ml:gap-3 max-ml:mt-5'>
-            <h1 className='he  text-white font-semibold  text-2xl'>Get Your Type</h1>
+          <div className=' flex flex-col items-center gap-6 mt-16 max-ml:gap-3 max-ml:mt-5'>
+            <h1 className=' text-white font-semibold  text-2xl'>Get Your Type</h1>
             
             <div className='flex flex-row  max-ml:grid max-ml:grid-cols-2  max-ml:gap-1 gap-5 text-white text-lg font-semibold max-ml:text-md max-sm:text-sm'>
               <span>
@@ -68,7 +69,7 @@ function Home() {
               </span>  
             </div>
 
-            <div className='he h-20 bg-white shadow-xl  flex  flex-row p-5 sm:max-ml:px-2  max-sm:flex-col max-sm:h-32 max-sm:gap-2' >
+            <div className=' h-20 bg-white shadow-xl  flex  flex-row p-5 sm:max-ml:px-2  max-sm:flex-col max-sm:h-32 max-sm:gap-2' >
               <div className='border-black border-2 w-96 sm:max-lg:w-64 h-10 flex flex-row justify-center items-center '>
                {!location && <SearchSharpIcon /> }
                 <input 
@@ -93,8 +94,25 @@ function Home() {
 
 
           </div>
-
+        </div>
           
+      </section>
+
+      <section className='partTwo h-[440px] m-8'>
+        <div className='insideTwo text-white flex flex-col gap-6 justify-center items-center '>
+           <h1 className='text-2xl font-semibold'>How it Work</h1>
+           <p className='w-[60%] text-center'>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. 
+            Lorem ipsum may be used as a placeholder before the final copy is available.</p>
+           <button className='px-8 py-2 text-lg font-semibold bg-gradient-to-r  from-orange-700 to-orange-500 rounded-3xl'>Submit Properties</button>
+           <div className='flex flex-row'>
+             <div className='w-40 h-32 border-2 rounded-tl-3xl rounded-br-3xl'></div>
+             <div></div>
+             <div></div>
+
+           </div>
+        
+        </div>
+
       </section>
 
   </div>
