@@ -7,7 +7,7 @@ function Navbar() {
   
   useEffect(()=>{
     const handleTransparent=()=>{
-      if(window.scrollY >=70){
+      if(window.scrollY >=40){
         setIsTransparent(true)
       }else{
         setIsTransparent(false)
@@ -19,8 +19,8 @@ function Navbar() {
   },[])
 
   return (
-    <>
-    <div className={`hede  ${isTrasparent &&  'fixed'} w-[100%] flex flex-row  h-[93px] items-center  justify-between px-10 ${isTrasparent && 'shadow-2xl'} ${isTrasparent? 'bg-white' :'bg-transparent'} `}>
+    <div className='hede'>
+      <div className={`  ${isTrasparent &&  'fixed'} w-[100%] flex flex-row  h-[93px] items-center  justify-between px-10 ${isTrasparent && 'shadow-2xl'} ${isTrasparent? 'bg-white' :'bg-transparent'} `}>
 
       <a href='/'>
       <div className='flex items-center gap-1'>
@@ -29,7 +29,7 @@ function Navbar() {
       </div>
       </a>
 
-      <div className={` ${!isTrasparent && 'text-white'} flex flex-row gap-5 max-lg:hidden`}>
+      <div className={`linke  ${!isTrasparent && 'text-white'} flex flex-row gap-5 max-lg:hidden`}>
         <a href='/' className='text-xl'> Type/Sefer</a>
         <a href='/' className='text-xl'> AboutUs</a>
         <a href='/' className='text-xl'> Service</a>
@@ -47,7 +47,7 @@ function Navbar() {
 
     </div>
     
-    </>
+    </div>
   
     )
 }
