@@ -103,9 +103,7 @@ function Home() {
       </div>   
       </section>
 
-      
-      
-      
+           
       
       <section className='partTwo h-[440px] m-8 xs:max-sm:h-[800px]'>
         <div className='insideTwo   '>
