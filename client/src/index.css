@@ -52,3 +52,7 @@
     color:orange
 }
 
+
+.Type div{
+   @apply text-center font-semibold text-lg
+}

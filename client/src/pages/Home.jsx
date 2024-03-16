@@ -9,6 +9,8 @@ import HouseOutlinedIcon from '@mui/icons-material/HouseOutlined';
 import VpnKeyOutlinedIcon from '@mui/icons-material/VpnKeyOutlined';
 import AddHomeOutlinedIcon from '@mui/icons-material/AddHomeOutlined';
 
+import imgg from '../assets/T/t3.jpg'
+
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
   const [location,setLocation]=useState('')
@@ -16,7 +18,7 @@ function Home() {
   const [type,setType]=useState(0)
   
   return (
-    <div className='flex flex-col gap-24'>
+    <div className='flex flex-col gap-16'>
      
       <section className="partOne h-[630px] max-ml:h-[700px] bg-no-repeat" >
       <div className='insideOne'>
@@ -129,7 +131,41 @@ function Home() {
       </section>
      
 
-     <section className='h-[1000px]'></section>
+     <section className='px-3 py-2  flex flex-col items-center  '>
+      <h1 className='font-bold text-2xl pb-5'> All Type Of Home</h1>
+       <div className='Type grid grid-cols-3 justify-items-center	 justify-center items-center  '>
+
+           <div >
+            Apartment
+            <img src={imgg} className='h-[220px] w-[300px]'/>
+           </div>
+          
+           <div>
+            Apartment
+            <img src={imgg}  className='h-[260px] w-[350px]'/>
+           </div>
+          
+           <div className='h-[220px] w-[300px]'>
+            Apartment
+            <img src={imgg} />
+           </div>
+           
+           <div>
+            Apartment
+            <img src={imgg}   className='h-[260px] w-[350px]'/>
+           </div>
+           
+           <div>
+            Apartment
+            <img src={imgg} className='h-[220px] w-[300px]'/>
+           </div>
+           
+           <div>
+            Apartment
+            <img src={imgg}  className='h-[260px] w-[350px]' />
+           </div>
+       </div>
+     </section>
 
 
  
