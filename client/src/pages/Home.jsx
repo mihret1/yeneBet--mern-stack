@@ -140,7 +140,7 @@ function Home() {
 
      <section className='px-3 py-2  flex flex-col items-center  '>
       <h1 className='font-bold text-2xl pb-5'> All Type Of Home</h1>
-       <div className='Type grid grid-cols-3 justify-items-center	 justify-center items-center  '>
+       <div className='Type grid grid-cols-3 xs:max-sm:grid-cols-1 sm:max-lg:grid-cols-2 justify-items-center	 justify-center items-center  '>
 
            <div >
             Apartment
@@ -148,27 +148,27 @@ function Home() {
            </div>
           
            <div>
-            Apartment
+            Villa
             <img src={t2}  className='h-[260px] w-[350px]'/>
            </div>
           
            <div className='h-[220px] w-[300px]'>
-            Apartment
+            Guest House
             <img src={imgg} />
            </div>
            
            <div>
-            Apartment
+            Condominuim
             <img src={t5}   className='h-[260px] w-[350px]'/>
            </div>
            
            <div>
-            Apartment
+            Compound
             <img src={t4} className='h-[220px] w-[300px]'/>
            </div>
            
            <div>
-            Apartment
+            Single House
             <img src={t6}  className='h-[260px] w-[350px]' />
            </div>
        </div>
