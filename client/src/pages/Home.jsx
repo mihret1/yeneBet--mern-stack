@@ -10,6 +10,13 @@ import VpnKeyOutlinedIcon from '@mui/icons-material/VpnKeyOutlined';
 import AddHomeOutlinedIcon from '@mui/icons-material/AddHomeOutlined';
 
 import imgg from '../assets/T/t3.jpg'
+import t1 from '../assets/Cat/t1.jpg'
+import t2 from '../assets/Cat/t2.jpg'
+import t3 from '../assets/Cat/t3.jpg'
+import t4 from '../assets/Cat/t4.jpg'
+import t5 from '../assets/Cat/t5.jpg'
+import t6 from '../assets/Cat/t6.jpg'
+
 
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
@@ -137,12 +144,12 @@ function Home() {
 
            <div >
             Apartment
-            <img src={imgg} className='h-[220px] w-[300px]'/>
+            <img src={t1} className='h-[220px] w-[300px]'/>
            </div>
           
            <div>
             Apartment
-            <img src={imgg}  className='h-[260px] w-[350px]'/>
+            <img src={t2}  className='h-[260px] w-[350px]'/>
            </div>
           
            <div className='h-[220px] w-[300px]'>
@@ -152,17 +159,17 @@ function Home() {
            
            <div>
             Apartment
-            <img src={imgg}   className='h-[260px] w-[350px]'/>
+            <img src={t5}   className='h-[260px] w-[350px]'/>
            </div>
            
            <div>
             Apartment
-            <img src={imgg} className='h-[220px] w-[300px]'/>
+            <img src={t4} className='h-[220px] w-[300px]'/>
            </div>
            
            <div>
             Apartment
-            <img src={imgg}  className='h-[260px] w-[350px]' />
+            <img src={t6}  className='h-[260px] w-[350px]' />
            </div>
        </div>
      </section>
