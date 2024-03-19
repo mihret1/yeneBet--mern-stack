@@ -177,8 +177,8 @@ function Home() {
      </section>
 
     
-    <section className='flex flex-row justify-center gap-7'>
-      <div className='flex w-[40%] gap-3' >
+    <section className='flex flex-row justify-center gap-7 max-ml:flex-col max-ml:p-3'>
+      <div className='flex w-[40%] gap-3 max-ml:w-[100%] ml:max-lg:w-[55%]' >
          <img src={t8} className='w-[50%]'/>
          <div className='flex flex-col gap-3'>
          <img src={t1}  className='h-[50%]' />
@@ -186,9 +186,9 @@ function Home() {
          </div>
       </div>
 
-      <div className='w-[38%] flex flex-col gap-4'>
-           <h1 className='text-3xl font-bold '>Discover about Apartment</h1>
-           <p className=' text-lg '>
+      <div className='w-[38%] max-ml:w-[100%] flex flex-col gap-4'>
+           <h1 className='text-3xl font-bold max-md:text-2xl '>Discover about Apartment</h1>
+           <p className=' text-lg max-md:text-base'>
            is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
