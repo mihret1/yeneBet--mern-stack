@@ -193,7 +193,7 @@ function Home() {
             industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
            </p>
-           <button className=' w-36 mt-3 py-2 bg-[#FF6531] text-lg font-semibold text-white '>Read More</button>
+           <button className=' w-36 mt-3 py-2 bg-[#FF6531] text-lg font-semibold text-white hover:bg-gradient-to-r from-[#e68363] to-[#c95d2f] '>Read More</button>
       </div>
     </section>
 
