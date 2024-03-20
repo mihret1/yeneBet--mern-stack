@@ -25,6 +25,8 @@ import t8 from '../assets/Cat/t8.jpg'
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 import AdjustOutlinedIcon from '@mui/icons-material/AdjustOutlined';
 import ShuffleIcon from '@mui/icons-material/Shuffle';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
@@ -32,29 +34,37 @@ function Home() {
   const [money,setMoney]=useState('')
   const [type,setType]=useState(0)
   const [fav,setFav]=useState(false)
+  const [imageArrow ,setImageArrow]=useState(false)
 
   const Cardd=(props)=>{
     return(
       <div>
            {/* for image part */}
-        
-        <div  className='p-2 h-[170px] bg-cover	w-[300px]' style={{ backgroundImage:`url(${props.imgg})` }}>
+
+        <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[170px] bg-cover	w-[300px]' style={{ backgroundImage:`url(${props.imgg})` }}>
           <div className='flex justify-between'>
             <button className=' px-4  rounded-md font-semibold text-white ' style={{ backgroundColor:`${props.bcolor}` }}>{props.bname}</button>
-            <div className= ' camera text-white  px-2 rounded-md  '><CameraAltOutlinedIcon sx={{ marginRight:1 }} />4</div>
+            <div className= ' camera text-white  px-2 rounded-md  '><CameraAltOutlinedIcon sx={{ marginRight:1 }} fontSize='small' />4</div>
           </div>
-          <div className=' flex'>
-            <div className='flex'>
+
+           { imageArrow && <div className='flex justify-between pt-6 '>
+              <button> <KeyboardArrowLeftIcon sx={{color:'#FF6531' ,fontSize:33}}/></button>
+              <button><KeyboardArrowRightIcon  sx={{color:'#FF6531', fontSize:33}}/></button>
+           </div>
+           }
+
+          <div className=' flex pl-24  '>
+            <div className='flex items-center text-white pr-14 pt-10'>
               <AdjustOutlinedIcon/> 
               <AdjustOutlinedIcon/> 
               <AdjustOutlinedIcon/> 
               <AdjustOutlinedIcon/> 
             </div>
-            <div className=' flex flex-col gap-2'>
-              <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:30,  backgroundColor:'white' ,color:'black', borderRadius:2, '&:hover':{backgroundColor:'white'}}}>
-               {!fav ? <FavoriteBorderOutlinedIcon /> : <FavoriteIcon sx={{ color:'red' }} /> }
+            <div className=' flex flex-col gap-1 place-self-end							'>
+              <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
+               {!fav ? <FavoriteBorderOutlinedIcon /> : <FavoriteIcon  sx={{ color:'red' }} /> }
               </IconButton>
-              <IconButton sx={{height:30,  backgroundColor:'white' ,color:'black', borderRadius:2, '&:hover':{backgroundColor:'white'}}}><ShuffleIcon /> </IconButton>
+              <IconButton sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}><ShuffleIcon fontSize='small'/> </IconButton>
 
             </div>
 

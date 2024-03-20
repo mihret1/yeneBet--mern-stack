@@ -56,3 +56,7 @@
 .Type div{
    @apply text-center font-semibold text-lg
 }
+
+.camera{
+    background-color: rgba(0, 0, 0, 0.5);
+}
