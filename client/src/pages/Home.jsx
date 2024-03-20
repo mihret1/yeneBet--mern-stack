@@ -8,6 +8,10 @@ import { IconButton } from '@mui/material';
 import HouseOutlinedIcon from '@mui/icons-material/HouseOutlined';
 import VpnKeyOutlinedIcon from '@mui/icons-material/VpnKeyOutlined';
 import AddHomeOutlinedIcon from '@mui/icons-material/AddHomeOutlined';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
+// import {Button} from '@mui/material';
+
 
 import imgg from '../assets/T/t3.jpg'
 import t1 from '../assets/Cat/t1.jpg'
@@ -18,14 +22,55 @@ import t5 from '../assets/Cat/t5.jpg'
 import t6 from '../assets/Cat/t6.jpg'
 import t7 from '../assets/Cat/t7.jpg'
 import t8 from '../assets/Cat/t8.jpg'
-
+import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
+import AdjustOutlinedIcon from '@mui/icons-material/AdjustOutlined';
+import ShuffleIcon from '@mui/icons-material/Shuffle';
 
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
   const [location,setLocation]=useState('')
   const [money,setMoney]=useState('')
   const [type,setType]=useState(0)
-  
+  const [fav,setFav]=useState(false)
+
+  const Cardd=(props)=>{
+    return(
+      <div>
+           {/* for image part */}
+        
+        <div  className='p-2 h-[170px] bg-cover	w-[300px]' style={{ backgroundImage:`url(${props.imgg})` }}>
+          <div className='flex justify-between'>
+            <button className=' px-4  rounded-md font-semibold text-white ' style={{ backgroundColor:`${props.bcolor}` }}>{props.bname}</button>
+            <div className= ' camera text-white  px-2 rounded-md  '><CameraAltOutlinedIcon sx={{ marginRight:1 }} />4</div>
+          </div>
+          <div className=' flex'>
+            <div className='flex'>
+              <AdjustOutlinedIcon/> 
+              <AdjustOutlinedIcon/> 
+              <AdjustOutlinedIcon/> 
+              <AdjustOutlinedIcon/> 
+            </div>
+            <div className=' flex flex-col gap-2'>
+              <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:30,  backgroundColor:'white' ,color:'black', borderRadius:2, '&:hover':{backgroundColor:'white'}}}>
+               {!fav ? <FavoriteBorderOutlinedIcon /> : <FavoriteIcon sx={{ color:'red' }} /> }
+              </IconButton>
+              <IconButton sx={{height:30,  backgroundColor:'white' ,color:'black', borderRadius:2, '&:hover':{backgroundColor:'white'}}}><ShuffleIcon /> </IconButton>
+
+            </div>
+
+          </div>
+
+        </div>
+        
+        {/* the text part */}
+        <div>
+          
+        </div>
+      
+      </div>
+    )
+  }
+
   return (
     <div className='flex flex-col gap-16'>
      
@@ -197,6 +242,18 @@ function Home() {
       </div>
     </section>
 
+
+   <section className='flex flex-col items-center justify-center'>
+       <h1 className='text-2xl font-semibold text-[#FCB598]'>Latest properties Listing</h1>
+       <p>Discover in Addis abeba best things to do, restaurant, theater ,night life and more.</p>
+       <div className='grid'>
+          <Cardd 
+              imgg={t2}
+              bname='Sale'
+              bcolor='red'/>
+       </div>
+  
+   </section>
  
   </div>
   )
