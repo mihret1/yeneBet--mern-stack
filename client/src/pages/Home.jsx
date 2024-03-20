@@ -35,7 +35,8 @@ function Home() {
   const [type,setType]=useState(0)
   const [fav,setFav]=useState(false)
   const [imageArrow ,setImageArrow]=useState(false)
-
+  const [imageNumber,setImageNumber]=useState(1)
+  
   const Cardd=(props)=>{
     return(
       <div>
@@ -54,11 +55,11 @@ function Home() {
            }
 
           <div className=' flex pl-24  '>
-            <div className='flex items-center text-white pr-14 pt-10'>
-              <AdjustOutlinedIcon/> 
-              <AdjustOutlinedIcon/> 
-              <AdjustOutlinedIcon/> 
-              <AdjustOutlinedIcon/> 
+            <div className='flex items-center text-white pr-14 pt-10 '>
+              <button><AdjustOutlinedIcon/> </button>
+              <button> <AdjustOutlinedIcon/></button> 
+              <button> <AdjustOutlinedIcon/> </button>
+              <button><AdjustOutlinedIcon/> </button>
             </div>
             <div className=' flex flex-col gap-1 place-self-end							'>
               <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
