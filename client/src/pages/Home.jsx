@@ -67,10 +67,10 @@ function Home() {
 
           <div className=' flex pl-24  '>
             <div className='flex items-center text-white pr-14 pt-10 '>
-                <button onClick={()=>setImageNumber(1)}><AdjustOutlinedIcon/> </button>
-                <button onClick={()=>setImageNumber(2)}> <AdjustOutlinedIcon/></button> 
-                <button onClick={()=>setImageNumber(3)}> <AdjustOutlinedIcon/> </button>
-                <button onClick={()=>setImageNumber(4)}><AdjustOutlinedIcon/> </button>
+                <button onClick={()=>setImageNumber(1)} style={{...( imageNumber===1 && {color:'#FF6531'})}} ><AdjustOutlinedIcon/> </button>
+                <button onClick={()=>setImageNumber(2)} style={{...( imageNumber===2 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/></button> 
+                <button onClick={()=>setImageNumber(3)} style={{...( imageNumber===3 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/> </button>
+                <button onClick={()=>setImageNumber(4)} style={{...( imageNumber===4 && {color:'#FF6531'})}}><AdjustOutlinedIcon/> </button>
             </div>
             <div className=' flex flex-col gap-1 place-self-end'>
               <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
