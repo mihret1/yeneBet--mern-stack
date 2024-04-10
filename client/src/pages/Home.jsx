@@ -42,31 +42,43 @@ function Home() {
       <div>
            {/* for image part */}
 
-        <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[170px] bg-cover	w-[300px]' style={{ backgroundImage:`url(${props.imgg})` }}>
+        <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[170px] bg-cover	w-[300px]' 
+             style={{
+            ...(imageNumber===1 && {backgroundImage:`url(${props.imgg1})`} ), 
+            ...(imageNumber===2 && {backgroundImage:`url(${props.imgg2})`} ), 
+            ...(imageNumber===3 && {backgroundImage:`url(${props.imgg3})`} ), 
+            ...(imageNumber===4 && {backgroundImage:`url(${props.imgg4})`} ) 
+
+              }}>
           <div className='flex justify-between'>
             <button className=' px-4  rounded-md font-semibold text-white ' style={{ backgroundColor:`${props.bcolor}` }}>{props.bname}</button>
             <div className= ' camera text-white  px-2 rounded-md  '><CameraAltOutlinedIcon sx={{ marginRight:1 }} fontSize='small' />4</div>
           </div>
 
-           { imageArrow && <div className='flex justify-between pt-6 '>
-              <button> <KeyboardArrowLeftIcon sx={{color:'#FF6531' ,fontSize:33}}/></button>
-              <button><KeyboardArrowRightIcon  sx={{color:'#FF6531', fontSize:33}}/></button>
-           </div>
-           }
+          { imageArrow && <div className='flex justify-between pt-6 '>
+              <button onClick={()=>{if(imageNumber>1){setImageNumber((e)=>e-1)} }}>
+                 <KeyboardArrowLeftIcon sx={{color:'#FF6531' ,fontSize:33}}/>
+              </button>
+              <button onClick={()=>{if(imageNumber<4){setImageNumber((e)=>e+1)}}}>
+                <KeyboardArrowRightIcon  sx={{color:'#FF6531', fontSize:33}}/>
+              </button>
+            </div>
+         }
 
           <div className=' flex pl-24  '>
             <div className='flex items-center text-white pr-14 pt-10 '>
-              <button><AdjustOutlinedIcon/> </button>
-              <button> <AdjustOutlinedIcon/></button> 
-              <button> <AdjustOutlinedIcon/> </button>
-              <button><AdjustOutlinedIcon/> </button>
+                <button onClick={()=>setImageNumber(1)}><AdjustOutlinedIcon/> </button>
+                <button onClick={()=>setImageNumber(2)}> <AdjustOutlinedIcon/></button> 
+                <button onClick={()=>setImageNumber(3)}> <AdjustOutlinedIcon/> </button>
+                <button onClick={()=>setImageNumber(4)}><AdjustOutlinedIcon/> </button>
             </div>
-            <div className=' flex flex-col gap-1 place-self-end							'>
+            <div className=' flex flex-col gap-1 place-self-end'>
               <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
-               {!fav ? <FavoriteBorderOutlinedIcon /> : <FavoriteIcon  sx={{ color:'red' }} /> }
+                 {!fav ? <FavoriteBorderOutlinedIcon /> : <FavoriteIcon  sx={{ color:'red' }} /> }
               </IconButton>
-              <IconButton sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}><ShuffleIcon fontSize='small'/> </IconButton>
-
+              <IconButton sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
+                <ShuffleIcon fontSize='small'/>
+              </IconButton>
             </div>
 
           </div>
@@ -259,7 +271,10 @@ function Home() {
        <p>Discover in Addis abeba best things to do, restaurant, theater ,night life and more.</p>
        <div className='grid'>
           <Cardd 
-              imgg={t2}
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
               bname='Sale'
               bcolor='red'/>
        </div>
