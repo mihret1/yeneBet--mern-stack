@@ -28,6 +28,11 @@ import ShuffleIcon from '@mui/icons-material/Shuffle';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
+import BedIcon from '@mui/icons-material/Bed';
+import BathtubIcon from '@mui/icons-material/Bathtub';
+import StraightIcon from '@mui/icons-material/Straight';
+import CallSplitIcon from '@mui/icons-material/CallSplit';
+
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
   const [location,setLocation]=useState('')
@@ -39,10 +44,10 @@ function Home() {
   
   const Cardd=(props)=>{
     return(
-      <div>
-           {/* for image part */}
+      <div className='w-[350px] shadow-2xl rounded-lg '>
+        {/* for image part */}
 
-        <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[170px] bg-cover	w-[300px]' 
+        <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] rounded-t' 
              style={{
             ...(imageNumber===1 && {backgroundImage:`url(${props.imgg1})`} ), 
             ...(imageNumber===2 && {backgroundImage:`url(${props.imgg2})`} ), 
@@ -51,8 +56,12 @@ function Home() {
 
               }}>
           <div className='flex justify-between'>
-            <button className=' px-4  rounded-md font-semibold text-white ' style={{ backgroundColor:`${props.bcolor}` }}>{props.bname}</button>
-            <div className= ' camera text-white  px-2 rounded-md  '><CameraAltOutlinedIcon sx={{ marginRight:1 }} fontSize='small' />4</div>
+            <button className=' px-4  rounded-md font-semibold text-white  ' style={{ backgroundColor:`${props.bcolor}` }}>
+              {props.bname}
+            </button>
+            <div className= ' camera text-white  px-2 rounded-md  '>
+              <CameraAltOutlinedIcon sx={{ marginRight:1 }} fontSize='small' /> 4
+            </div>
           </div>
 
           { imageArrow && <div className='flex justify-between pt-6 '>
@@ -65,8 +74,8 @@ function Home() {
             </div>
          }
 
-          <div className=' flex pl-24  '>
-            <div className='flex items-center text-white pr-14 pt-10 '>
+          <div className=' flex pl-32'>
+            <div className='flex items-center text-white pr-16 pt-10 '>
                 <button onClick={()=>setImageNumber(1)} style={{...( imageNumber===1 && {color:'#FF6531'})}} ><AdjustOutlinedIcon/> </button>
                 <button onClick={()=>setImageNumber(2)} style={{...( imageNumber===2 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/></button> 
                 <button onClick={()=>setImageNumber(3)} style={{...( imageNumber===3 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/> </button>
@@ -86,8 +95,14 @@ function Home() {
         </div>
         
         {/* the text part */}
-        <div>
-          
+        <div className='p-4'>
+          <span className='text-gray-400 font-semibold tracking-wide text-[18px] '>BOLE</span>
+          <h1 className='font-bold text-xl'>2 Bed Room villa</h1>
+          <p className='text-[#FF6531] font-bold text-lg '>12,000*</p>
+          <p className=' text-gray-500 font-sans leading-6  font-semibold'>In publishing and graphic design, Lorem ipsum is a placeholder text
+             commonly used to demonstrate the visual form of a document or a typeface 
+             without.
+             </p>
         </div>
       
       </div>
@@ -276,7 +291,7 @@ function Home() {
               imgg3={t1}
               imgg4={t5}
               bname='Sale'
-              bcolor='red'/>
+              bcolor='#FF6531'/>
        </div>
   
    </section>
