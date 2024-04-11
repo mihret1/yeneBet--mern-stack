@@ -32,6 +32,9 @@ import BedIcon from '@mui/icons-material/Bed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
 import StraightIcon from '@mui/icons-material/Straight';
 import CallSplitIcon from '@mui/icons-material/CallSplit';
+import Divider from '@mui/material/Divider';
+
+
 
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
@@ -96,13 +99,22 @@ function Home() {
         
         {/* the text part */}
         <div className='p-4'>
-          <span className='text-gray-400 font-semibold tracking-wide text-[18px] '>BOLE</span>
-          <h1 className='font-bold text-xl'>2 Bed Room villa</h1>
-          <p className='text-[#FF6531] font-bold text-lg '>12,000*</p>
+          <span className='text-gray-500 font-semibold tracking-wide text-[17px] '>BOLE</span>
+          <h1 className='font-bold text-xl'>Two Bed Room villa</h1>
+          <p className='text-[#FF6531] font-bold text-base '>12,000*</p>
           <p className=' text-gray-500 font-sans leading-6  font-semibold'>In publishing and graphic design, Lorem ipsum is a placeholder text
              commonly used to demonstrate the visual form of a document or a typeface 
              without.
-             </p>
+          </p>
+          <div className='flex justify-between mt-3'>
+            <div className='flex font-semibold items-center gap-1'><BedIcon />  Bed : {props.bedNo} <div className='h-4 w-[1px] bg-black ml-2'></div> </div>
+            <div className='flex font-semibold items-center gap-1'><BathtubIcon />  Bath : {props.bathNo} <div className='h-4 w-[1px] bg-black ml-3'></div> </div>
+            <div className='flex font-semibold items-center  '><CallSplitIcon />Sq Ft : {props.kare}  </div>
+          </div>
+          <div className='flex justify-between mt-3 items-center'>
+            <span className='text-gray-500 font-semibold'  >{props.date}</span>
+            <span className=' border border-black	rounded-2xl border-dashed px-6	py-1  text-gray-500 font-semibold'><button >Details</button></span>
+          </div>
         </div>
       
       </div>
@@ -291,7 +303,12 @@ function Home() {
               imgg3={t1}
               imgg4={t5}
               bname='Sale'
-              bcolor='#FF6531'/>
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
        </div>
   
    </section>
