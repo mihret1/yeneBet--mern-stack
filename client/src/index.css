@@ -12,7 +12,6 @@
 }
 
 
-
 .partOne::before{
     content: '';
     background-image: url('../src/assets/c3.jpg');

@@ -33,8 +33,7 @@ import BathtubIcon from '@mui/icons-material/Bathtub';
 import StraightIcon from '@mui/icons-material/Straight';
 import CallSplitIcon from '@mui/icons-material/CallSplit';
 import Divider from '@mui/material/Divider';
-
-
+import Button from '@mui/material/Button';
 
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
@@ -44,13 +43,20 @@ function Home() {
   const [fav,setFav]=useState(false)
   const [imageArrow ,setImageArrow]=useState(false)
   const [imageNumber,setImageNumber]=useState(1)
+
+  // const imgs1=[t1,t2,t3,t4]
+  // const imgs2=[t1,t2,t3,t4]
+  // const imgs3=[t1,t2,t3,t4]
+  // const imgs4=[t1,t2,t3,t4]
+
+  // const [counter,setCounter]=useState(1)
   
   const Cardd=(props)=>{
     return(
-      <div className='w-[350px] shadow-2xl rounded-lg '>
+      <div className='w-[350px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg '>
         {/* for image part */}
 
-        <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] rounded-t' 
+         <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] lg:max-lgg:w-[340px] rounded-t' 
              style={{
             ...(imageNumber===1 && {backgroundImage:`url(${props.imgg1})`} ), 
             ...(imageNumber===2 && {backgroundImage:`url(${props.imgg2})`} ), 
@@ -59,7 +65,7 @@ function Home() {
 
               }}>
           <div className='flex justify-between'>
-            <button className=' px-4  rounded-md font-semibold text-white  ' style={{ backgroundColor:`${props.bcolor}` }}>
+            <button className=' px-4  rounded-md font-semibold text-white  ' style={{ backgroundColor:`${props.bcolor}`}} >
               {props.bname}
             </button>
             <div className= ' camera text-white  px-2 rounded-md  '>
@@ -75,47 +81,46 @@ function Home() {
                 <KeyboardArrowRightIcon  sx={{color:'#FF6531', fontSize:33}}/>
               </button>
             </div>
-         }
+          }
 
           <div className=' flex pl-32'>
-            <div className='flex items-center text-white pr-16 pt-10 '>
-                <button onClick={()=>setImageNumber(1)} style={{...( imageNumber===1 && {color:'#FF6531'})}} ><AdjustOutlinedIcon/> </button>
+            <div className='flex items-center text-white pr-16 pt-10'>
+                <button onClick={()=>setImageNumber(1)} style={{...( imageNumber===1 && {color:'#FF6531'})}} ><AdjustOutlinedIcon/></button>
                 <button onClick={()=>setImageNumber(2)} style={{...( imageNumber===2 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/></button> 
                 <button onClick={()=>setImageNumber(3)} style={{...( imageNumber===3 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/> </button>
                 <button onClick={()=>setImageNumber(4)} style={{...( imageNumber===4 && {color:'#FF6531'})}}><AdjustOutlinedIcon/> </button>
             </div>
             <div className=' flex flex-col gap-1 place-self-end'>
-              <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
+                <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
                  {!fav ? <FavoriteBorderOutlinedIcon /> : <FavoriteIcon  sx={{ color:'red' }} /> }
-              </IconButton>
-              <IconButton sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
+                </IconButton>
+                <IconButton sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
                 <ShuffleIcon fontSize='small'/>
-              </IconButton>
+                </IconButton>
             </div>
-
           </div>
 
-        </div>
+         </div>
         
         {/* the text part */}
-        <div className='p-4'>
-          <span className='text-gray-500 font-semibold tracking-wide text-[17px] '>BOLE</span>
-          <h1 className='font-bold text-xl'>Two Bed Room villa</h1>
+         <div className='p-4'>
+          <span className='text-gray-500 font-semibold tracking-wide text-[16px] '>BOLE</span>
+          <h1 className='font-bold text-lg'>Two Bed Room villa</h1>
           <p className='text-[#FF6531] font-bold text-base '>12,000*</p>
-          <p className=' text-gray-500 font-sans leading-6  font-semibold'>In publishing and graphic design, Lorem ipsum is a placeholder text
+          <p className=' text-gray-500 font-sans text-[15px] font-semibold'>In Publishing and Graphic design, Lorem ipsum is a placeholder text
              commonly used to demonstrate the visual form of a document or a typeface 
              without.
           </p>
           <div className='flex justify-between mt-3'>
             <div className='flex font-semibold items-center gap-1'><BedIcon />  Bed : {props.bedNo} <div className='h-4 w-[1px] bg-black ml-2'></div> </div>
             <div className='flex font-semibold items-center gap-1'><BathtubIcon />  Bath : {props.bathNo} <div className='h-4 w-[1px] bg-black ml-3'></div> </div>
-            <div className='flex font-semibold items-center  '><CallSplitIcon />Sq Ft : {props.kare}  </div>
+            <div className='flex font-semibold items-center'><CallSplitIcon />Sq Ft : {props.kare}  </div>
           </div>
           <div className='flex justify-between mt-3 items-center'>
             <span className='text-gray-500 font-semibold'  >{props.date}</span>
-            <span className=' border border-black	rounded-2xl border-dashed px-6	py-1  text-gray-500 font-semibold'><button >Details</button></span>
+            <span className=' border border-black	rounded-2xl border-dashed px-4 py-1  text-gray-500 font-semibold'><button >Details</button></span>
           </div>
-        </div>
+         </div>
       
       </div>
     )
@@ -187,8 +192,9 @@ function Home() {
                   onChange={(e)=>setLocation(e.target.value)}
                   value={location}
                   placeholder='Search by location'
-                  style={{ outline:'none',fontWeight:'bolder', color:'black' }}/>
-                  {location &&<IconButton onClick={()=>setLocation('')}> <CloseIcon /></IconButton>}
+                  style={{ outline:'none',fontWeight:'bolder', color:'black' }}
+                  />
+                  {location && <IconButton onClick={()=>setLocation('')}> <CloseIcon /></IconButton>}
                 </div>
                 <div className='border-black border-2 w-96 sm:max-lg:w-64 h-10  flex flex-row sm:max-ml:justify-start justify-center items-center font-semibold xs:max-sm:w-[96%]'>
                 <input
@@ -209,8 +215,7 @@ function Home() {
       </div>   
       </section>
 
-           
-      
+                 
       <section className='partTwo h-[440px] m-8 xs:max-sm:h-[800px]'>
         <div className='insideTwo   '>
           <div className=' Two w-[100%] h-[440px] xs:max-sm:h-[800px] text-white flex flex-col gap-6 justify-center items-center '>
@@ -272,7 +277,7 @@ function Home() {
      </section>
 
     
-    <section className='flex flex-row justify-center gap-7 max-ml:flex-col max-ml:p-3'>
+     <section className='flex flex-row justify-center gap-7 max-ml:flex-col max-ml:p-3'>
       <div className='flex w-[40%] gap-3 max-ml:w-[100%] ml:max-lg:w-[55%]' >
          <img src={t8} className='w-[50%]'/>
          <div className='flex flex-col gap-3'>
@@ -290,14 +295,14 @@ function Home() {
            </p>
            <button className=' w-36 mt-3 py-2 bg-[#FF6531] text-lg font-semibold text-white hover:bg-gradient-to-r from-[#e68363] to-[#c95d2f] '>Read More</button>
       </div>
-    </section>
+     </section>
 
 
-   <section className='flex flex-col items-center justify-center'>
-       <h1 className='text-2xl font-semibold text-[#FCB598]'>Latest properties Listing</h1>
-       <p>Discover in Addis abeba best things to do, restaurant, theater ,night life and more.</p>
-       <div className='grid'>
-          <Cardd 
+     <section className='flex flex-col items-center justify-center gap-2 '>
+       <h1 className='text-2xl font-semibold text-[#FF6531]'>Latest properties Listing</h1>
+       <p className='text-gray-600 text-center '>Discover in Addis abeba best things to do, restaurant, theater ,night life and more.</p>
+       <div className='grid grid-cols-3 gap-7 max-md:grid-cols-1 md:max-lg:grid-cols-2'>
+             <Cardd 
               imgg1={t2}
               imgg2={t3}
               imgg3={t1}
@@ -309,9 +314,80 @@ function Home() {
               bcolor='#FF6531'
               date='August 4,2025'
               />
+               <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+               <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              /> 
+              <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              /> 
+              <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+               <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+      
+      
+      
+      
        </div>
   
-   </section>
+     </section>
+
+     <section className=''>
+      <h1></h1>
+      <p></p>
+      <div></div>
+
+     </section>
  
   </div>
   )

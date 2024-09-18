@@ -29,17 +29,18 @@ function Navbar() {
       </div>
       </a>
 
-      <div className={`linke  ${!isTrasparent && 'text-white'} flex flex-row gap-5 max-lg:hidden`}>
-        <a href='/' className='text-xl'> Type/Sefer</a>
-        <a href='/' className='text-xl'> AboutUs</a>
-        <a href='/' className='text-xl'> Service</a>
-        <a href='/' className='text-xl'>Blog</a>
-        <a href='/' className='text-xl'> Contact</a>
+      <div className={`linke  ${!isTrasparent && 'text-white'} flex flex-row gap-5 md:max-ml:gap-3 max-md:hidden`}>
+        <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Type</a>
+        <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Sefer</a>
+        <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> AboutUs</a>
+        <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Service</a>
+        <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'>Blog</a>
+        <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Contact</a>
       </div>
 
-      <button className='bg-[#ff6900] px-10 py-1 text-white font-medium	text-xl max-lg:hidden' >Login</button>
+      <button className='hover:bg-[#d07431] bg-[#ff6900] px-10 py-1 md:max-lg:px-5 text-white font-medium	text-xl max-md:hidden' >Login</button>
        
-      <button className={`lg:hidden ${!isTrasparent && 'text-white'}`}>
+      <button className={`md:hidden ${!isTrasparent && 'text-white'}`}>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
       </svg>
