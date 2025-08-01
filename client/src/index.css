@@ -22,7 +22,6 @@
 }
 
 .partTwo{
-    /* content: ''; */
     background-image: url('../src/assets/T/t77.jpg');
     background-size:cover;
     /* background-repeat: no-repeat; */
@@ -59,3 +58,15 @@
 .camera{
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.insideThree{
+    background: rgba(0, 0, 0, 0.7);
+}
+    .no-scrollbar::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, Edge, Opera */
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* For IE and Edge */
+        scrollbar-width: none;  /* For Firefox */
+    }
