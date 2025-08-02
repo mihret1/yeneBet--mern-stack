@@ -27,6 +27,24 @@ import t10 from '../assets/towns/1.jpg'
 import t11 from '../assets/towns/2.jpg'
 import t12 from '../assets/towns/3.jpg'
 
+import g1 from '../assets/GH/g2.jpg'
+import g2 from '../assets/GH/g1.jpg'
+import g3 from '../assets/GH/g3.jpg'
+import g4 from '../assets/GH/g4.jpg'
+
+
+import k1 from '../assets/GH/k1.jpg'
+import k2 from '../assets/GH/k2.jpg'
+import k3 from '../assets/GH/k3.jpg'
+import be1 from '../assets/GH/be1.jpg'
+import be2 from '../assets/GH/be2.jpg'
+import be3 from '../assets/GH/be3.jpg'
+import ba1 from '../assets/GH/ba1.jpg'
+import ba2 from '../assets/GH/ba2.jpg'
+import ba3 from '../assets/GH/ba3.jpg'
+import pa1 from '../assets/GH/pa1.jpg'
+import pa2 from '../assets/GH/pa2.jpg'
+import pa3 from '../assets/GH/pa3.jpg'
 
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 import AdjustOutlinedIcon from '@mui/icons-material/AdjustOutlined';
@@ -46,6 +64,8 @@ import LocationCityIcon from '@mui/icons-material/LocationCity';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import HomeIcon from '@mui/icons-material/Home';
 
+
+
 import imgh from '../assets/towns/image.png'
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
@@ -56,12 +76,9 @@ function Home() {
   const [imageArrow ,setImageArrow]=useState(false)
   const [imageNumber,setImageNumber]=useState(1)
   const t= Array(8).fill(0);
-  // const imgs1=[t1,t2,t3,t4]
-  // const imgs2=[t1,t2,t3,t4]
-  // const imgs3=[t1,t2,t3,t4]
-  // const imgs4=[t1,t2,t3,t4]
-
-  // const [counter,setCounter]=useState(1)
+  const [gm, setGm]=useState(1)
+  const [gh,setGh]= useState(1)
+  
   
   const Cardd=(props)=>{
     return(
@@ -139,7 +156,7 @@ function Home() {
   }
 
   return (
-    <div className='flex flex-col gap-16  '>
+    <div className='flex flex-col gap-20  '>
      
       <section className="partOne h-[660px] max-ml:h-[1000px] bg-no-repeat" >
         <div className='insideOne'>
@@ -292,7 +309,7 @@ function Home() {
      </section>
 
     
-     <section className='flex flex-row justify-center gap-7 max-ml:flex-col max-ml:p-3'>
+     <section className='flex flex-row justify-center gap-7  max-ml:flex-col max-ml:p-3 mt-24'>
       <div className='flex w-[40%] gap-3 max-ml:w-[100%] ml:max-lg:w-[55%]' >
          <img src={t8} className='w-[50%]'/>
          <div className='flex flex-col gap-3'>
@@ -313,7 +330,7 @@ function Home() {
      </section>
 
 
-     <section className='flex flex-col items-center justify-center gap-2 '>
+     <section className='flex flex-col items-center justify-center gap-2 mt-20 '>
        <h1 className='text-3xl font-semibold text-[#FF6531]'>Latest Properties Listing</h1>
        <p className='text-gray-600 text-center  text-lg font-semibold'>Discover in Addis abeba best things to do, restaurant, theater ,night life and more.</p>
        <div className='grid grid-cols-3 gap-7 max-md:grid-cols-1 md:max-lg:grid-cols-2'>
@@ -397,7 +414,7 @@ function Home() {
   
      </section>
 
-     <section className=' relative z-10 w-full  flex flex-col   gap-4 justify-center h-[450px] bg-no-repeat  bg-cover text-white  '  style={{ backgroundImage:`url(${t9})`}}>
+     <section className='mt-28  relative z-10 w-full  flex flex-col   gap-4 justify-center h-[450px] bg-no-repeat  bg-cover text-white  '  style={{ backgroundImage:`url(${t9})`}}>
         <p className=' absolute top-20 w-full text-pretty text-center text-3xl font-semibold'>All Towns You can find Your Home</p>
         <p className='absolute top-32 w-full text-lg text-center'>we have home in every country you want.  </p>
         <div className='absolute  top-48 left-0 w-full  flex flex-row  justify-around gap-6 overflow-x-scroll scroll-smooth no-scrollbar  whitespace-nowrap  '>
@@ -417,7 +434,7 @@ function Home() {
         </div>
      </section>
      
-     <section className='flex flex-col items-center gap-3  mt-24'>
+     <section className='flex flex-col items-center gap-3  mt-40'>
       <h1 className='text-3xl'>How it Work</h1>
       <p className='text-lg text-center max-sm:px-[5%] px-[20%]'>see why this place are most popular in addis ababa.see why this place are most popular in addis ababasee why this place are most popular in addis ababasee why this place are most popular in addis ababasee why this place are most popular in addis ababa</p>
       <div className=' justify-around  w-full items-center max-sm:justify-center grid grid-cols-5 max-sm:flex max-sm:flex-col sm:max-ml:grid-cols-2 ml:max-lgg:grid-cols-3 lgg:max-xl:items-start'>
@@ -428,22 +445,109 @@ function Home() {
           </div>
              <img src={imgh} className='h-16 bg-gray-600 ' style={{  }}/>
           <div className='flex flex-col items-center  py-5 w-64 px-2 gap-2'> 
-            <LocationCityIcon   style={{fontSize:60, padding:12, backgroundColor:'#d0c8c6ff' , borderRadius:10}}/>
-            <h1 className='text-xl'>Choose Town</h1>
+            <HomeIcon   style={{fontSize:60, padding:12, backgroundColor:'#d0c8c6ff' , borderRadius:10}}/>
+            <h1 className='text-xl'>Choose Home Type</h1>
             <p className='text-center'>we have alot of house so choose town.we have alot of house so choose town </p>
           </div>
              <img src={imgh} className='h-16 bg-gray-600 ' style={{  }}/>
 
            <div className='flex flex-col items-center  py-5 w-64 px-2 gap-2'> 
-            <LocationCityIcon   style={{fontSize:60, padding:12, backgroundColor:'#d0c8c6ff' , borderRadius:10}}/>
-            <h1 className='text-xl'>Choose Town</h1>
+            <MonetizationOnIcon   style={{fontSize:60, padding:12, backgroundColor:'#d0c8c6ff' , borderRadius:10}}/>
+            <h1 className='text-xl'>Get home  </h1>
             <p className='text-center'>we have alot of house so choose town.we have alot of house so choose town </p>
+            
           </div>
           
       </div>
 
      </section>
 
+
+     <section className='flex flex-col items-center font-semibold gap-5 pt-28'>
+        <h1 className='text-4xl max-sm:text-2xl'>Guest house gallery</h1>
+        <div className='flex flex-row max-sm:grid max-sm:grid-cols-3  gap-4 text-xl font-normal'>
+           <button onClick={()=>setGh(1)} className='hover:text-orange-600'>Living Room</button>
+           <button onClick={()=>setGh(2)} className='hover:text-orange-600'>Kitchen</button>
+           <button onClick={()=>setGh(3)} className='hover:text-orange-600'>Bedroom</button>
+           <button onClick={()=>setGh(4)} className='hover:text-orange-600'>Parking</button>
+           <button onClick={()=>setGh(5)} className='hover:text-orange-600'>Bathroom</button>
+        </div>
+       
+       { 
+         gh==1 &&
+          <div className='flex flex-col gap-2 items-center w-full'>
+            {gm == 1 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={g1}/>}
+            {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={g2}/>}
+            {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={g3}/>}
+
+            <div className='flex flex-row gap-2 '>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={g1}  onClick={()=>setGm(1)} />
+                <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={g2} onClick={()=>setGm(2)}/>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={g3} onClick={()=>setGm(3)}/>
+            </div>
+          </div> 
+       }
+        { 
+         gh==2 &&
+          <div className='flex flex-col gap-2 items-center w-full'>
+            {gm == 1 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={k1}/>}
+            {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={k2}/>}
+            {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={k3}/>}
+
+            <div className='flex flex-row gap-2 '>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={k1}  onClick={()=>setGm(1)} />
+                <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={k2} onClick={()=>setGm(2)}/>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={k3} onClick={()=>setGm(3)}/>
+            </div>
+          </div> 
+       }
+
+        { 
+         gh==3 &&
+          <div className='flex flex-col gap-2 items-center w-full'>
+            {gm == 1 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={be1}/>}
+            {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={be2}/>}
+            {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={be3}/>}
+
+            <div className='flex flex-row gap-2 '>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={be1}  onClick={()=>setGm(1)} />
+                <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={be2} onClick={()=>setGm(2)}/>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={be3} onClick={()=>setGm(3)}/>
+            </div>
+          </div> 
+       }
+        { 
+         gh==4 &&
+          <div className='flex flex-col gap-2 items-center w-full'>
+            {gm == 1 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={pa1}/>}
+            {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={pa2}/>}
+            {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={pa3}/>}
+
+            <div className='flex flex-row gap-2 '>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={pa1}  onClick={()=>setGm(1)} />
+                <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={pa2} onClick={()=>setGm(2)}/>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={pa3} onClick={()=>setGm(3)}/>
+            </div>
+          </div> 
+       }
+        { 
+         gh==5 &&
+          <div className='flex flex-col gap-2 items-center w-full'>
+            {gm == 1 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={ba1}/>}
+            {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={ba2}/>}
+            {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={ba3}/>}
+
+            <div className='flex flex-row gap-2 '>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={ba1}  onClick={()=>setGm(1)} />
+                <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={ba2} onClick={()=>setGm(2)}/>
+                <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={ba3} onClick={()=>setGm(3)}/>
+            </div>
+          </div> 
+       }
+       
+       
+
+     </section>
  
   </div>
   )
