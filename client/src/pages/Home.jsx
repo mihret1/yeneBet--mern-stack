@@ -548,6 +548,127 @@ function Home() {
        
 
      </section>
+
+
+      <section className='flex flex-col items-center justify-center gap-2 mt-20 '>
+       <h1 className='text-3xl font-semibold text-[#FF6531]'>The Houses</h1>
+       <p className='text-gray-600 text-center  text-lg font-semibold'>Discover in Addis abeba best things to do, restaurant, theater ,night life and more.</p>
+       <div className='grid grid-cols-3 gap-7 max-md:grid-cols-1 md:max-lg:grid-cols-2'>
+             <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='3000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+               <Cardd 
+              imgg1={t5}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t2}
+              bname='Rent'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+               <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              /> 
+              <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              /> 
+              <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+               <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='5000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+               <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='3000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+               <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='3000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+               <Cardd 
+              imgg1={t2}
+              imgg2={t3}
+              imgg3={t1}
+              imgg4={t5}
+              bname='Sale'
+              bedNo='4'
+              bathNo='2'
+              kare='3000'
+              bcolor='#FF6531'
+              date='August 4,2025'
+              />
+      
+      
+      
+      
+       </div>
+  
+     </section>
  
   </div>
   )
