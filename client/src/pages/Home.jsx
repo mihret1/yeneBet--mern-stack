@@ -67,6 +67,7 @@ import HomeIcon from '@mui/icons-material/Home';
 
 
 import imgh from '../assets/towns/image.png'
+import zIndex from '@mui/material/styles/zIndex';
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
   const [location,setLocation]=useState('')
@@ -82,7 +83,7 @@ function Home() {
   
   const Cardd=(props)=>{
     return(
-      <div className='w-[350px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg '>
+      <div className='w-[350px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg  '>
         {/* for image part */}
 
          <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] lg:max-lgg:w-[340px] rounded-t' 
@@ -119,14 +120,17 @@ function Home() {
                 <button onClick={()=>setImageNumber(3)} style={{...( imageNumber===3 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/> </button>
                 <button onClick={()=>setImageNumber(4)} style={{...( imageNumber===4 && {color:'#FF6531'})}}><AdjustOutlinedIcon/> </button>
             </div>
-            <div className=' flex flex-col gap-1 place-self-end'>
-                <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
+            <div className=' flex flex-col gap-1 place-self-end  '>
+              
+                <IconButton onClick={()=>setFav((e)=>!e)} sx={{height:27, zIndex:10,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
                  {!fav ? <FavoriteBorderOutlinedIcon /> : <FavoriteIcon  sx={{ color:'red' }} /> }
                 </IconButton>
+                
                 <IconButton sx={{height:27,  backgroundColor:'white' ,color:'black', borderRadius:1, '&:hover':{backgroundColor:'white'}}}>
                 <ShuffleIcon fontSize='small'/>
                 </IconButton>
             </div>
+         
           </div>
 
          </div>
@@ -156,7 +160,7 @@ function Home() {
   }
 
   return (
-    <div className='flex flex-col gap-20  '>
+    <div className='flex flex-col gap-20 z-20 '>
      
       <section className="partOne h-[660px] max-ml:h-[1000px] bg-no-repeat" >
         <div className='insideOne'>

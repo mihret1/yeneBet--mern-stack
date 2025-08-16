@@ -8,7 +8,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import CopyrightIcon from '@mui/icons-material/Copyright';
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
 function Footer(){
