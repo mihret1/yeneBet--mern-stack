@@ -21,7 +21,7 @@ function Navbar() {
   },[])
 
   return (
-    <div className='hede '>
+    <div className='hede  '>
       <div className={`z-50  ${isTrasparent &&   'fixed   '} w-[100%] flex flex-row  h-[93px] items-center  justify-between px-10 ${isTrasparent && 'shadow-3xl'} ${isTrasparent? 'bg-white' :'bg-transparent'}  ${(navIcon && !isTrasparent ) && 'max-lg:bg-white max-lg:fixed' }`}>
 
       <a href='/'>
@@ -32,7 +32,7 @@ function Navbar() {
       </a>
 
       <div className={`linke  ${!isTrasparent && 'text-white'} flex flex-row gap-5 lg:max-lgg:gap-[13px] max-lg:hidden`}>
-        <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'>All House</a>
+        <a href='/allhouse' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'>All House</a>
         <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'>Towns</a>
         <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Type</a>
         <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Sale</a>
@@ -54,7 +54,7 @@ function Navbar() {
     
       </div>
     { navIcon && <div className={`  mt-[93px] px-2 fixed lg:hidden bg-white justify-between w-[100%] flex flex-col  h-80   `}>
-        <a href='/' className='text-xl border-b-[1px]  md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/> All House</a>
+        <a href='/allhouse' className='text-xl border-b-[1px]  md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/> All House</a>
         <a href='/' className='text-xl border-b-[1px]  md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Towns</a>
         <a href='/' className='text-xl border-b-[1px]  md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Type</a>
         <a href='/' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Sale</a>
