@@ -24,7 +24,7 @@ import BathtubIcon from '@mui/icons-material/Bathtub';
 import CallSplitIcon from '@mui/icons-material/CallSplit';
 
 
-const Type=()=>{
+const Rent=()=>{
       const [imageArrow ,setImageArrow]=useState(false)
       const [imageNumber,setImageNumber]=useState(1)
       const [fav,setFav]=useState(false)
@@ -115,8 +115,15 @@ const Type=()=>{
         
         <div className=" w-full">
           
-         
-         <h1 className="text-center text-4xl font-serif text-orange-800 pt-2 pb-4 font-semibold">Apartment</h1>
+          <h1 className="text-green-700 text-center text-4xl font-serif py-3">Houses for Rent</h1>
+          <nav className=" w-full  pt-4 flex flex-row justify-center gap-3    max-ml:grid max-ml:grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 place-items-center text-xl ">
+              <span onClick={()=>{}} className="px-8 py-1 font-medium bg-orange-300   rounded-2xl ">Villa</span>
+              <span  className="px-4 py-1 bg-orange-300   rounded-2xl font-medium ">Guest House</span>
+              <span className="px-4 py-1 bg-orange-300   rounded-2xl font-medium ">Condominium</span>
+              <span className="px-4 py-1 bg-orange-300   rounded-2xl font-medium">Apartment</span>
+              <span className="px-4 py-1 bg-orange-300   rounded-2xl font-medium">Compound</span>
+              <span className="px-4 py-1 bg-orange-300   rounded-2xl font-medium">Single House</span>
+          </nav>
           <div className="px-1 flex flex-row xsx:justify-items-center max-sm:mt-6  max-xl:grid max-sm:grid-cols-3 sm:max-ml:grid-cols-4 ml:max-xl:grid-cols-5  gap-3 xl:gap-6 justify-center w-full  text-lg  pt-4"> 
             <span><input type="checkbox" /> Addis Abeba</span>
              <span> <input type="checkbox" /> Hawassa</span>
@@ -132,10 +139,7 @@ const Type=()=>{
 
 
           </div>
-          <div className="flex justify-center gap-3 pt-7"> 
-            <span className="bg-[#FF6531] px-7 py-1  text-xl text-white"><input type="checkbox" /> Sale</span>
-            <span className="bg-green-700 px-7  py-1 text-xl text-white "><input type="checkbox"/> Rent</span>
-          </div>
+       
        </div>  
 
          <div className='mt-16 grid grid-cols-3 gap-7 max-md:grid-cols-1 md:max-lg:grid-cols-2 justify-items-center'>
@@ -257,4 +261,4 @@ const Type=()=>{
     )
 }
 
-export default Type
+export default Rent

@@ -68,6 +68,19 @@ import HomeIcon from '@mui/icons-material/Home';
 
 import imgh from '../assets/towns/image.png'
 import zIndex from '@mui/material/styles/zIndex';
+
+// digital marketing
+// graphics
+// video editing 
+// ui/ux
+// web development
+// mobile development
+// money making platform
+// remote job
+// system development
+// AI
+// trade
+
 function Home() {
   const [isDrop,setIsDrop]=useState(false)
   const [location,setLocation]=useState('')
