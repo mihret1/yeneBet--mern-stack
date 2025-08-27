@@ -172,6 +172,7 @@ const Favorite=()=>{
                      bcolor='green'
                      date='August 4,2025'
                      />
+                     
                       <Cardd 
                      imgg1={t2}
                      imgg2={t3}
