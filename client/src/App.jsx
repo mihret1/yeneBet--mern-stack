@@ -9,7 +9,7 @@ import Type from './pages/Type'
 import Rent from './pages/Rent' 
 import Sale from './pages/Sale'
 import Favorite from './pages/Favorite_house'
-
+import DetailHome from './pages/Detail'
 
 const App=()=>{
   return(
@@ -24,6 +24,7 @@ const App=()=>{
           <Route path='/sale' element={<Sale />}/>
           <Route path='/rent' element={<Rent />}/>
           <Route path='/fav' element={<Favorite />}/>
+          <Route path='/detail' element={<DetailHome />}/>
 
         </Routes>
     <Footer />    
