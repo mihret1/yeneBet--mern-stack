@@ -149,11 +149,14 @@ const DetailHome=()=>{
 
                            </div>
                         </div>
+                        <div className=" mt-10  bg-white p-4 shadow-2xl">
+                           <h1 className="text-2xl border-b-[1px] pb-2">Location on Map</h1>
                         <iframe  className="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63054.73287609015!2d38.83204485!3d8.979435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9b33a3569139%3A0xb505349b8c87fdd2!2sBole%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1760629876105!5m2!1sen!2set"
                          width="600" height="450" style={{ border:0 }} allowfullscreen="" 
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
                         </iframe>
+                        </div>
                         <div className=" mt-10  bg-white p-4 shadow-2xl">
                            <h1 className="text-2xl border-b-[1px] pb-2">Contact Infomation</h1>
                            <div className=" flex max-md:flex-col gap-12 pt-4 text-lg"  >
@@ -181,6 +184,26 @@ const DetailHome=()=>{
                               <img src={tg} className="w-48"/>
                            </div>
                         </div>
+                        
+                        <div className="w-[550px] max-xsx:w-[300px] xsx:max-sm:w-[430px]  bg-white shadow-2xl lg:hidden px-3  mt-10   p-4  ">
+                   <h1 className="text-orange-700 text-2xl font-serif leading-relaxed">Interested on this house? </h1>
+                   <form className="flex flex-col gap-3">
+                     <input placeholder="Name" type="text"  className="border rounded-md border-orange-400 text-lg focus:outline-orange-300 px-3 py-2 w-full"/>
+                     <input placeholder="Phone" type="text"  className="border rounded-md border-orange-400 text-lg focus:outline-orange-300 px-3 py-2 w-full"/>
+                     <input placeholder="Email" type="text"  className="border rounded-md border-orange-400 text-lg focus:outline-orange-300 px-3 py-2 w-full"/>
+                     <textarea placeholder="Name" type="text"   className="border h-32 text-gray-800 rounded-md border-orange-400 text-lg focus:outline-orange-300 px-3 py-2 w-full">
+                       I want this house...
+                     </textarea>
+                     <button type="submit" className="bg-black text-white text-xl py-2 rounded-md">Send</button>
+                      <div className="flex w-full gap-3 max-w-full">
+                            <button className="bg-orange-400 flex-1 py-1 rounded-md text-lg">Call</button>
+                            <button className="bg-orange-400 flex-1 py-1 rounded-md text-lg">Telegram</button>
+                            <button className="bg-orange-400 flex-1 py-1 rounded-md text-lg">WhatsApp</button>
+
+
+                      </div>
+                   </form>
+                       </div>
                       
                       </div>
                     }
@@ -201,8 +224,24 @@ const DetailHome=()=>{
 
 
   
-                <div className="w-[550px] bg-white shadow-2xl max-lg:hidden ">
-                  hello interested
+                <div className="w-[550px]  bg-white shadow-2xl max-lg:hidden px-3 h-full pb-5  ">
+                   <h1 className="text-orange-700 text-2xl font-serif leading-relaxed">Interested on this house? </h1>
+                   <form className="flex flex-col gap-3">
+                     <input placeholder="Name" type="text"  className="border rounded-md border-orange-400 text-lg focus:outline-orange-300 px-3 py-2 w-full"/>
+                     <input placeholder="Phone" type="text"  className="border rounded-md border-orange-400 text-lg focus:outline-orange-300 px-3 py-2 w-full"/>
+                     <input placeholder="Email" type="text"  className="border rounded-md border-orange-400 text-lg focus:outline-orange-300 px-3 py-2 w-full"/>
+                     <textarea placeholder="Name" type="text"   className="border h-32 text-gray-800 rounded-md border-orange-400 text-lg focus:outline-orange-300 px-3 py-2 w-full">
+                       I want this house...
+                     </textarea>
+                     <button type="submit" className="bg-black text-white text-xl py-2 rounded-md">Send</button>
+                      <div className="flex w-full gap-3 max-w-full">
+                            <button className="bg-orange-400 flex-1 py-1 rounded-md text-lg">Call</button>
+                            <button className="bg-orange-400 flex-1 py-1 rounded-md text-lg">Telegram</button>
+                            <button className="bg-orange-400 flex-1 py-1 rounded-md text-lg">WhatsApp</button>
+
+
+                      </div>
+                   </form>
                 </div>
             </div>
          </div>
