@@ -6,8 +6,19 @@ import t2 from '../assets/Cat/t2.jpg'
 import t3 from '../assets/Cat/t3.jpg'
 import t5 from '../assets/Cat/t5.jpg'
 
-
+import tg from '../assets/tg.jpg'
 import { IconButton } from '@mui/material';
+import LanguageIcon from '@mui/icons-material/Language';
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+// import TiktokIcon from '@mui/icons-material/Tiktok';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import { FaTiktok } from "react-icons/fa";
+
 
 
 import BedIcon from '@mui/icons-material/Bed';
@@ -17,7 +28,7 @@ import SquareFootIcon from '@mui/icons-material/SquareFoot';
 import WarehouseIcon from '@mui/icons-material/Warehouse';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-
+import CheckBoxOutlinedIcon from '@mui/icons-material/CheckBoxOutlined';
 
 const DetailHome=()=>{
       const [imageArrow ,setImageArrow]=useState(false)
@@ -74,24 +85,36 @@ const DetailHome=()=>{
 
                         <div className=" mt-10  bg-white p-4 shadow-2xl">
                            <h1 className="text-xl border-b-[1px] pb-2">Description</h1>
-                           <div className="text-lg flex flex-col gap-3" >
+                           <div className="text-lg flex flex-col gap-3 pt-4" >
                            
+                                <p>- Bole, fully furnished three-bedroom apartment available for rent in Addis Ababa.</p>
 
-                    <p>- Bole, fully furnished three-bedroom apartment available for rent in Addis Ababa.</p>
+                                <p>-  Located in a secure and convenient residential area, the apartment is on the third floor of a modern building.</p>
 
-                   <p>-  Located in a secure and convenient residential area, the apartment is on the third floor of a modern building.</p>
+                                <p>- It features a spacious living and dining area with a balcony, a well-equipped kitchen with a laundry section, a master bedroom with an en-suite bathroom and balcony, two additional bedrooms, a shared bathroom, and a private parking space for one car.</p>
 
-                    <p>- It features a spacious living and dining area with a balcony, a well-equipped kitchen with a laundry section, a master bedroom with an en-suite bathroom and balcony, two additional bedrooms, a shared bathroom, and a private parking space for one car.</p>
+                                <p>- The building is equipped with an elevator, standby generator, and 24-hour security service.</p>
 
-                    <p>- The building is equipped with an elevator, standby generator, and 24-hour security service.</p>
-
-                    <p>- Monthly rent: 125,000 birr (negotiable).</p>
+                                <p>- Monthly rent: 125,000 birr (negotiable).</p>
                            </div>
                         </div>
 
                         <div className="mt-10  bg-white p-4 shadow-2xl">
-                          <h1 className="text-3xl border-b-[1px] pb-2 text-gray-800">Details</h1>
-                          <div className="flex  pt-3 justify-around max-sm:flex-col bg-orange-200 py-8">
+                          <h1 className="text-2xl border-b-[1px] pb-2 text-gray-800">Address</h1>
+                            <div className="w-72  max-sm:w-44 flex flex-col gap-2 ">
+                              <div className="flex text-lg justify-between border-b-[1px] py-2 pr-4"> <span>Area</span> <span>Bole</span> </div>
+                                {/* <div className="flex text-lg justify-between"> <span>Area</span> <span>Bole</span> </div> */}
+                              <div className="flex text-lg justify-between border-b-[1px] py-2 pr-4"> <span>State</span> <span>Addis Abeba</span> </div>
+                              <div className="flex text-lg justify-between border-b-[1px] py-2 pr-4"> <span>Country</span> <span>Ethiopia</span> </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div className="mt-10  bg-white p-4 shadow-2xl ">
+                          <h1 className="text-2xl border-b-[1px] pb-2 text-gray-800">Details</h1>
+                          <div className="flex  mt-3 justify-around max-sm:flex-col bg-orange-200 py-8">
                                 <div className="flex flex-col gap-3 text-lg text-gray-900">
                                   <p><span className="font-medium  text-black pr-8 ">Property Id:</span> 1234</p>
                                   <p><span className="font-medium  text-black pr-8 ">Price :</span>2 million</p>
@@ -112,6 +135,53 @@ const DetailHome=()=>{
                                 </div>
                           </div>
                         </div>
+
+                        <div className="mt-10  bg-white p-4 shadow-2xl">
+                           <h1 className=" border-b-2 pb-3 text-2xl"> Features</h1>
+                           <div className=" text-lg grid pt-2 grid-cols-3 max-sm:grid-cols-2 gap-2 text-gray-800 font-sans">
+                              <span><CheckBoxOutlinedIcon /> 24/7 Security</span>
+                              <span><CheckBoxOutlinedIcon /> Parking</span>
+                              <span><CheckBoxOutlinedIcon /> Balcony</span>
+                              <span><CheckBoxOutlinedIcon /> Internet</span>
+                              <span><CheckBoxOutlinedIcon /> Garden</span>
+                              <span><CheckBoxOutlinedIcon /> Generator</span>
+                              <span><CheckBoxOutlinedIcon /> Garage</span>
+
+                           </div>
+                        </div>
+                        <iframe  className="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63054.73287609015!2d38.83204485!3d8.979435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b9b33a3569139%3A0xb505349b8c87fdd2!2sBole%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1760629876105!5m2!1sen!2set"
+                         width="600" height="450" style={{ border:0 }} allowfullscreen="" 
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+                        </iframe>
+                        <div className=" mt-10  bg-white p-4 shadow-2xl">
+                           <h1 className="text-2xl border-b-[1px] pb-2">Contact Infomation</h1>
+                           <div className=" flex max-md:flex-col gap-12 pt-4 text-lg"  >
+                              <div className="flex flex-col gap-2">
+                                <span className="">
+                                  <LanguageIcon /> www.yenebet.com
+                                </span>
+                                <span className="">
+                                  <LocalPhoneIcon/> 0911223344
+                                </span><span className="">
+                                  <WhatsAppIcon /> 0955667788
+                                </span>
+                                <span className="">
+                                  <TelegramIcon /> @yenebet
+                                </span>
+                                <div className="flex gap-2">
+                                   <a href='https://www.tiktok.com/'  target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
+                                   <a href='https://www.tiktok.com/'  target="_blank" rel="noopener noreferrer"><YouTubeIcon /></a>
+                                   <a href='https://www.tiktok.com/'  target="_blank" rel="noopener noreferrer"><InstagramIcon /></a>
+                                   <a href='https://www.tiktok.com/'  target="_blank" rel="noopener noreferrer"><LinkedInIcon /></a>
+                                   <a href='https://www.tiktok.com/'  target="_blank" rel="noopener noreferrer"><FaTiktok className="text-black text-xl hover:text-gray-700" /></a>
+
+                                   </div>
+                              </div>
+                              <img src={tg} className="w-48"/>
+                           </div>
+                        </div>
+                      
                       </div>
                     }
 
