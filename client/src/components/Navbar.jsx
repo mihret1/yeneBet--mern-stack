@@ -40,7 +40,7 @@ function Navbar() {
         <a href='/fav' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'>Favorite</a>
         <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> AboutUs</a>
         {/* <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Service</a> */}
-        <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Contact</a>
+        <a href='/contactus' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Contact</a>
       </div>
 
       <button className='hover:bg-[#d07431] bg-[#ff6900] px-10 py-1 md:max-lg:px-5 text-white font-medium	text-xl max-lg:hidden' >Login</button>
@@ -63,7 +63,7 @@ function Navbar() {
         <a href='/fav' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'>Favorite</a>
         <a href='/' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  AboutUs</a>
         {/* <a href='/' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Service</a> */}
-        <a href='/' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Contact</a>
+        <a href='/contactus' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Contact</a>
     </div>
    }
 

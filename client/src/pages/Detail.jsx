@@ -7,7 +7,6 @@ import t3 from '../assets/Cat/t3.jpg'
 import t5 from '../assets/Cat/t5.jpg'
 
 import tg from '../assets/tg.jpg'
-import { IconButton } from '@mui/material';
 import LanguageIcon from '@mui/icons-material/Language';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import TelegramIcon from '@mui/icons-material/Telegram';
@@ -19,7 +18,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { FaTiktok } from "react-icons/fa";
 
-
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 import BedIcon from '@mui/icons-material/Bed';
 import BathtubIcon from '@mui/icons-material/Bathtub';
@@ -69,14 +68,14 @@ const DetailHome=()=>{
             <div className="flex gap-3 ">
                 
                 <div className=" px-2  w-full ">
-                    <div className="flex bg-white gap-3 text-xl border-b-[1px] border-gray-500 text-gray-600 h-16 items-center ">
-                      <button onClick={()=>setDetail_list(1)}>Detail</button>
+                    <div className="flex bg-white gap-3 text-2xl pl-2 border-b-[1px] border-orange-500 text-gray-600 h-16 items-center ">
+                      <button  onClick={()=>setDetail_list(1)}>Detail</button>
                       <button onClick={()=>setDetail_list(2)}>Video</button>                      
                     </div>
                     
                     { detail_list ==1 &&
                       <div className="">
-                         <h1 className="text-xl"> Detail</h1>
+                         <h1 className="text-2xl pl-2 pb-2 text-orange-800 font-serif"> Detail</h1>
                          <div className='bg-black flex flex-row justify-center shadow-2xl '>
                            <button> <ArrowBackIosIcon sx={{ color:'white'}} /></button>
                              <img src={t1} className='w-[90%]' style={{ }}/>
@@ -172,6 +171,9 @@ const DetailHome=()=>{
                                 <span className="">
                                   <TelegramIcon /> @yenebet
                                 </span>
+                                <span className="">
+                                  <EmailOutlinedIcon /> yenebet@gmail.com
+                                </span>
                                 <div className="flex gap-2">
                                    <a href='https://www.tiktok.com/'  target="_blank" rel="noopener noreferrer"><FacebookIcon /></a>
                                    <a href='https://www.tiktok.com/'  target="_blank" rel="noopener noreferrer"><YouTubeIcon /></a>
@@ -181,7 +183,7 @@ const DetailHome=()=>{
 
                                    </div>
                               </div>
-                              <img src={tg} className="w-48"/>
+                              <img src={tg} className="w-48 h-44"/>
                            </div>
                         </div>
                         

@@ -10,6 +10,7 @@ import Rent from './pages/Rent'
 import Sale from './pages/Sale'
 import Favorite from './pages/Favorite_house'
 import DetailHome from './pages/Detail'
+import ContactUs from './pages/Contact'
 
 const App=()=>{
   return(
@@ -25,6 +26,7 @@ const App=()=>{
           <Route path='/rent' element={<Rent />}/>
           <Route path='/fav' element={<Favorite />}/>
           <Route path='/detail' element={<DetailHome />}/>
+          <Route path='/contactus' element={<ContactUs />}/>
 
         </Routes>
     <Footer />    
