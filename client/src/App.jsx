@@ -11,7 +11,7 @@ import Sale from './pages/Sale'
 import Favorite from './pages/Favorite_house'
 import DetailHome from './pages/Detail'
 import ContactUs from './pages/Contact'
-
+import AboutUs from './pages/AboutUs'
 const App=()=>{
   return(
     <BrowserRouter>
@@ -27,6 +27,7 @@ const App=()=>{
           <Route path='/fav' element={<Favorite />}/>
           <Route path='/detail' element={<DetailHome />}/>
           <Route path='/contactus' element={<ContactUs />}/>
+          <Route path='/aboutus' element={<AboutUs />}/>
 
         </Routes>
     <Footer />    

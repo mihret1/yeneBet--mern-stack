@@ -38,7 +38,7 @@ function Navbar() {
         <a href='/sale' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Sale</a>
         <a href='/rent' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Rent</a>
         <a href='/fav' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'>Favorite</a>
-        <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> AboutUs</a>
+        <a href='/aboutus' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> AboutUs</a>
         {/* <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Service</a> */}
         <a href='/contactus' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Contact</a>
       </div>
@@ -61,7 +61,7 @@ function Navbar() {
         <a href='/sale' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Sale</a>
         <a href='/rent' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Rent</a>
         <a href='/fav' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'>Favorite</a>
-        <a href='/' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  AboutUs</a>
+        <a href='/aboutus' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  AboutUs</a>
         {/* <a href='/' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Service</a> */}
         <a href='/contactus' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Contact</a>
     </div>
