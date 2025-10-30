@@ -35,6 +35,11 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.abu{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
 .insideOne{
     isolation: isolate;
 
