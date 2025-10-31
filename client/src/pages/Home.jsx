@@ -96,7 +96,7 @@ function Home() {
   
   const Cardd=(props)=>{
     return(
-      <div className='w-[350px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg  '>
+      <div className='w-[350px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg hover:shadow-md hover:bg-orange-50   '>
         {/* for image part */}
 
          <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] lg:max-lgg:w-[340px] rounded-t' 
@@ -164,7 +164,7 @@ function Home() {
           </div>
           <div className='flex justify-between mt-3 items-center'>
             <span className='text-gray-500 font-semibold'  >{props.date}</span>
-            <span className=' border border-black	rounded-2xl border-dashed px-4 py-1  text-gray-500 font-semibold'><button >Details</button></span>
+            <a href='/detail' className=' border border-black	rounded-2xl border-dashed px-4 py-1  text-gray-500 font-semibold'><button >Details</button></a>
           </div>
          </div>
       
@@ -190,10 +190,10 @@ function Home() {
             <div className='h-[80px]'>
               <button onClick={()=>setIsDrop((e)=>!e)} className=' bg-[#ff6900] px-5 py-1 rounded-full font-bold text-2xl'> Rent <ArrowDropDownIcon fontSize='large' /></button>
               
-                { isDrop &&  <div className=' bg-white w-[100px] py-1 flex flex-col items-center text-center ml-[18%] '>
+                { isDrop &&  <div className=' bg-white w-[100px] py-1 mb-3 flex flex-col gap-1 items-center text-center ml-[18%] '>
                   <ul >
-                      <li><a href='/auth'>Sale/buy</a></li>
-                      <li><a href='/auth'>Rent/rented</a></li>
+                      <li><a href='/sale'>Sale/buy</a></li>
+                      <li><a href='/rent'>Rent/rented</a></li>
 
                     </ul>   
                 </div>}
@@ -204,32 +204,32 @@ function Home() {
               
               </div>
             
-              <div className=' flex flex-col items-center gap-6 mt-4 max-ml:gap-3 max-ml:mt-5'>
+              <div className=' flex flex-col items-center gap-6 mt-7 max-ml:gap-3 max-ml:mt-7'>
                 <h1 className=' text-white font-semibold  text-2xl'>Get Your Type</h1>
                 
                 <div className='h-10 max-ml:h-[120px] flex flex-row  max-ml:grid max-ml:grid-cols-2  max-ml:gap-1 gap-5 text-white text-lg font-semibold max-ml:text-md max-sm:text-sm'>
                   <span>
-                    <a href='/' onMouseOver={()=>setType(1)} onMouseLeave={()=>setType(0)}>Normal House</a>
+                    <a href='/type' onMouseOver={()=>setType(1)} onMouseLeave={()=>setType(0)}>Normal House</a>
                     {type ===1 && <div className='h-1 rounded-lg bg-white mt-1 '></div>}
                   </span>
                   <span>
-                    <a href='/' onMouseOver={()=>setType(2)} onMouseLeave={()=>setType(0)}>Compound House</a>
+                    <a href='/type' onMouseOver={()=>setType(2)} onMouseLeave={()=>setType(0)}>Compound House</a>
                     {type ===2 && <div className='h-1 rounded-lg bg-white mt-1 '></div>}
                   </span>         
                   <span>
-                    <a href='/' onMouseOver={()=>setType(3)} onMouseLeave={()=>setType(0)}>Villa</a>
+                    <a href='/type' onMouseOver={()=>setType(3)} onMouseLeave={()=>setType(0)}>Villa</a>
                     {type ===3 && <div className='h-1 rounded-lg bg-white mt-1 '></div>}
                   </span>     
                   <span>
-                    <a href='/' onMouseOver={()=>setType(4)} onMouseLeave={()=>setType(0)}>Condominiuim</a>
+                    <a href='/type' onMouseOver={()=>setType(4)} onMouseLeave={()=>setType(0)}>Condominiuim</a>
                     {type ===4 && <div className='h-1 rounded-lg bg-white mt-1 '></div>}
                   </span>
                   <span>
-                    <a href='/' onMouseOver={()=>setType(5)} onMouseLeave={()=>setType(0)}>Guest House</a>
+                    <a href='/type' onMouseOver={()=>setType(5)} onMouseLeave={()=>setType(0)}>Guest House</a>
                     {type ===5 && <div className='h-1 rounded-lg bg-white mt-1'></div>}
                   </span>   
                   <span>
-                    <a href='/' onMouseOver={()=>setType(6)} onMouseLeave={()=>setType(0)}>Apartment</a>
+                     <a href='/type' onMouseOver={()=>setType(6)} onMouseLeave={()=>setType(0)}>Apartment</a>
                     {type ===6 && <div className='h-1 rounded-lg bg-white mt-1 '></div>}
                   </span>  
                 </div>
@@ -271,7 +271,7 @@ function Home() {
             <h1 className='text-2xl font-semibold'>How it Work</h1>
             <p className='w-[60%] text-center'>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. 
               Lorem ipsum may be used as a placeholder before the final copy is available.</p>
-            <button className='px-8 py-2 text-lg font-semibold  bg-gradient-to-r  from-orange-800 to-orange-500 rounded-3xl  '>Submit Properties</button>
+            <button className='px-8 py-2 text-lg font-semibold  bg-gradient-to-r  from-orange-800 to-orange-500 hover:from-orange-500 hover:to-orange-800  rounded-3xl  '>Submit Properties</button>
             <div className='flex flex-row gap-5 xs:max-sm:flex-col xs:max-sm:gap-1'>
               <div className='w-36 h-28 border-[1px] rounded-tl-3xl rounded-br-3xl flex items-center justify-center'>
                 <HouseOutlinedIcon sx={{color:'white', fontSize:60}}/>
@@ -290,37 +290,37 @@ function Home() {
      
 
      <section className='px-3 py-2  flex flex-col items-center  '>
-      <h1 className='font-bold text-2xl pb-5'> All Type Of Home</h1>
-       <div className='Type grid grid-cols-3 xs:max-sm:grid-cols-1 sm:max-lg:grid-cols-2 justify-items-center	 justify-center items-center  '>
+      <h1 className='font-bold text-3xl pb-5'> All Type Of Home</h1>
+       <div className='Type   grid grid-cols-3 xs:max-sm:grid-cols-1 sm:max-lg:grid-cols-2 justify-items-center	 justify-center items-center  '>
 
-           <div >
-            Apartment
+           <div  className='cursor-pointer  hover:scale-105 transition-transform duration-300' >
+             Apartment
             <img src={t1} className='h-[220px] w-[300px]'/>
            </div>
           
-           <div>
+           <div className='cursor-pointer  hover:scale-105 transition-transform duration-300' >
             Villa
             <img src={t2}  className='h-[260px] w-[350px]'/>
            </div>
           
-           <div className='h-[220px] w-[300px]'>
+           <div className='h-[220px] w-[300px] cursor-pointer  hover:scale-105 transition-transform duration-300'>
             Guest House
             <img src={imgg} />
            </div>
            
            <div>
             Condominuim
-            <img src={t5}   className='h-[260px] w-[350px]'/>
+            <img src={t5}   className='h-[260px] w-[350px] cursor-pointer  hover:scale-105 transition-transform duration-300'/>
            </div>
            
            <div>
             Compound
-            <img src={t4} className='h-[220px] w-[300px]'/>
+            <img src={t4} className='h-[220px] w-[300px] cursor-pointer  hover:scale-105 transition-transform duration-300'/>
            </div>
            
            <div>
             Single House
-            <img src={t6}  className='h-[260px] w-[350px]' />
+            <img src={t6}  className='h-[260px] w-[350px] cursor-pointer  hover:scale-105 transition-transform duration-300' />
            </div>
        </div>
      </section>
@@ -342,7 +342,7 @@ function Home() {
             industry`s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently 
            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
            </p>
-           <button className=' w-36 mt-3 py-2 bg-[#FF6531] text-lg font-semibold text-white hover:bg-gradient-to-r from-[#e68363] to-[#c95d2f] '>Read More</button>
+           <a href='/detail' className='text-center   hover:scale-105 transition-transform duration-300 w-36 mt-3 py-2 bg-[#FF6531] text-lg font-semibold text-white hover:bg-gradient-to-r from-[#e68363] to-[#c95d2f] '> Read More</a>
       </div>
      </section>
 
@@ -437,7 +437,7 @@ function Home() {
         <div className='absolute  top-48 left-0 w-full  flex flex-row  justify-around gap-6 overflow-x-scroll scroll-smooth no-scrollbar  whitespace-nowrap  '>
          {t.map((e,k)=>(
 
-          <div  key={k} className='shrink-0 flex flex-col justify-end  h-[320px] w-56  rounded-lg  ' style={{ backgroundImage:`url(${t10})` }}>
+          <div  key={k} className='hover:scale-105 transition-transform duration-300 shrink-0 flex flex-col justify-end  h-[320px] w-56  rounded-lg  ' style={{ backgroundImage:`url(${t10})` }}>
              <div className='insideThree flex flex-col  justify-center items-center rounded-b-lg h-32 '>
                   <p className='text-xl font-semibold '>Addis Abeba</p>
                   <p className=''>12+ for rent & 20+ for sale </p>
@@ -492,12 +492,12 @@ function Home() {
        
        { 
          gh==1 &&
-          <div className='flex flex-col gap-2 items-center w-full'>
+          <div className='flex flex-col gap-2 items-center w-full '>
             {gm == 1 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={g1}/>}
             {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={g2}/>}
             {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={g3}/>}
 
-            <div className='flex flex-row gap-2 '>
+            <div className='flex flex-row gap-2 cursor-pointer'>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={g1}  onClick={()=>setGm(1)} />
                 <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={g2} onClick={()=>setGm(2)}/>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={g3} onClick={()=>setGm(3)}/>
@@ -506,12 +506,12 @@ function Home() {
        }
         { 
          gh==2 &&
-          <div className='flex flex-col gap-2 items-center w-full'>
+          <div className='flex flex-col gap-2 items-center w-full '>
             {gm == 1 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={k1}/>}
             {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={k2}/>}
             {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={k3}/>}
 
-            <div className='flex flex-row gap-2 '>
+            <div className='flex flex-row gap-2 cursor-pointer '>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={k1}  onClick={()=>setGm(1)} />
                 <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={k2} onClick={()=>setGm(2)}/>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={k3} onClick={()=>setGm(3)}/>
@@ -526,7 +526,7 @@ function Home() {
             {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={be2}/>}
             {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={be3}/>}
 
-            <div className='flex flex-row gap-2 '>
+            <div className='flex flex-row gap-2 cursor-pointer '>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={be1}  onClick={()=>setGm(1)} />
                 <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={be2} onClick={()=>setGm(2)}/>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={be3} onClick={()=>setGm(3)}/>
@@ -535,12 +535,12 @@ function Home() {
        }
         { 
          gh==4 &&
-          <div className='flex flex-col gap-2 items-center w-full'>
+          <div className='flex flex-col gap-2 items-center w-full '>
             {gm == 1 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={pa1}/>}
             {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={pa2}/>}
             {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={pa3}/>}
 
-            <div className='flex flex-row gap-2 '>
+            <div className='flex flex-row gap-2 cursor-pointer '>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={pa1}  onClick={()=>setGm(1)} />
                 <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={pa2} onClick={()=>setGm(2)}/>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={pa3} onClick={()=>setGm(3)}/>
@@ -554,7 +554,7 @@ function Home() {
             {gm == 2 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={ba2}/>}
             {gm == 3 && <img  className='w-[65%] h-[430px] max-sm:h-[300px] max-md:w-[85%]' src={ba3}/>}
 
-            <div className='flex flex-row gap-2 '>
+            <div className='flex flex-row gap-2 cursor-pointer'>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={ba1}  onClick={()=>setGm(1)} />
                 <img  className='w-64 h-48 max-sm:w-28 max-sm:h-20 'src={ba2} onClick={()=>setGm(2)}/>
                 <img className='w-64 h-48 max-sm:w-28 max-sm:h-20 ' src={ba3} onClick={()=>setGm(3)}/>
