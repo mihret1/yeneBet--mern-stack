@@ -92,7 +92,7 @@ function Navbar() {
       </div>
        
        <div className='flex items-center gap-2  max-lg:hidden'> 
-          <a href='/post' className='hover:bg-[#d07431] bg-[#ff6900] px-4 py-1 md:max-lg:px-3 text-white font-medium	text-xl' >Post</a>
+          <a href='/post' className='hover:bg-[#d07431] bg-[#ff6900] lg:px-5 py-1 md:max-lg:px-2 text-white font-medium	text-xl' >Post</a>
           <a href='/auth'><AccountCircleOutlinedIcon className={` hover:text-blue-500 ${!isTrasparent && 'text-white'}`} sx={{ fontSize:30 }} /></a>
        </div>
      
