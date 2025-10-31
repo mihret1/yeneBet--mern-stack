@@ -3,6 +3,7 @@ import img1 from '../assets/b.jpg'
 import { useState,useEffect } from 'react'
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { useNavigate } from 'react-router-dom';
+import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 
 function Navbar() {
   const [isTrasparent,setIsTransparent]=useState(false)
@@ -89,9 +90,12 @@ function Navbar() {
         {/* <a href='/' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Service</a> */}
         <a href='/contactus' className='text-xl  md:max-ml:text-lg  md:max-lg:font-semibold'> Contact</a>
       </div>
-
-      <button className='hover:bg-[#d07431] bg-[#ff6900] px-5 py-1 md:max-lg:px-5 text-white font-medium	text-xl max-lg:hidden' >Login</button>
        
+       <div className='flex items-center gap-2  max-lg:hidden'> 
+          <a href='/' className='hover:bg-[#d07431] bg-[#ff6900] px-4 py-1 md:max-lg:px-3 text-white font-medium	text-xl' >Post</a>
+          <a href='/auth'><AccountCircleOutlinedIcon className={` hover:text-blue-500 ${!isTrasparent && 'text-white'}`} sx={{ fontSize:30 }} /></a>
+       </div>
+     
       <button onClick={()=>setNavIcon((e)=>!e)}  className={`lg:hidden  ${!navIcon && !isTrasparent && 'text-white'} `}>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
@@ -101,13 +105,13 @@ function Navbar() {
     
     
       </div>
-    { navIcon && <div className={`  mt-[93px] px-2 fixed lg:hidden bg-white justify-between w-[100%] flex flex-col  h-80   `}>
+    { navIcon && <div className={`  mt-[93px] px-2 fixed lg:hidden bg-white justify-between w-[100%] flex flex-col    `}>
                <a href='/' className='text-xl border-b-[1px]  md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>Home</a>
 
         <a href='/allhouse' className='text-xl border-b-[1px]  md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/> All House</a>
         {/* <a href='/town' className='text-xl border-b-[1px]  md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Towns</a> */}
         <select      onChange={handleChangeCity} defaultValue=""
-              className={`outline-none cursor-pointer no-arrow hover:text-orange-400 bg-transparent } w-20  text-center text-xl  md:max-ml:text-lg  md:max-lg:font-semibold`}>
+              className={`outline-none border-b-[1px] w-full cursor-pointer no-arrow hover:text-orange-400 bg-transparent } w-20   text-xl  md:max-ml:text-lg  md:max-lg:font-semibold`}>
            <option value=""   className='text-white'>  <ArrowRightAltIcon  style={{color:'#ff6900'}}/> →   Cities</option>
            <option value="/town" className='text-black text-lg'> Addis Ababa</option>
            <option value="/town"  className='text-black text-lg'>Hawassa</option>
@@ -121,8 +125,8 @@ function Navbar() {
          </select>
         {/* <a href='/type' className='text-xl border-b-[1px]  md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Type</a> */}
           <select   onChange={handleChangeType} defaultValue=""
-              className={`outline-none  no-arrow hover:text-orange-400 bg-transparent  w-20  text-center text-xl  md:max-ml:text-lg  md:max-lg:font-semibold`}>
-           <option value=""   className='text-white'> <a href='/town' >→  Type</a></option>
+              className={`outline-none border-b-[1px] w-full no-arrow hover:text-orange-400 bg-transparent   text-xl  md:max-ml:text-lg  md:max-lg:font-semibold`}>
+           <option value=""   className='text-white'> <a href='/town' > → Type</a></option>
            <option value="/type" className='text-black text-lg'> Apartment</option>
            <option value="/type"  className='text-black text-lg'>Condominium</option>
            <option value="/type"   className='text-black text-lg'>Villa</option>
@@ -138,6 +142,13 @@ function Navbar() {
         <a href='/aboutus' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  AboutUs</a>
         {/* <a href='/' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Service</a> */}
         <a href='/contactus' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Contact</a>
+        <div className='flex flex-col  gap-2 mt-2 mb-2  '> 
+          <a href='/' className='w-20  hover:bg-[#d07431] bg-[#ff6900] px-4 py-1 md:max-lg:px-3 text-white font-medium	text-xl' >Post</a>
+           <span className='border-y-[1px]'>
+                       <a href='/auth'><AccountCircleOutlinedIcon className={` hover:text-blue-500 `} sx={{ fontSize:30 }} /></a>
+
+           </span>
+       </div>
     </div>
    }
 
