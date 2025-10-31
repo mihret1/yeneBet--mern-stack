@@ -92,7 +92,7 @@ function Navbar() {
       </div>
        
        <div className='flex items-center gap-2  max-lg:hidden'> 
-          <a href='/' className='hover:bg-[#d07431] bg-[#ff6900] px-4 py-1 md:max-lg:px-3 text-white font-medium	text-xl' >Post</a>
+          <a href='/post' className='hover:bg-[#d07431] bg-[#ff6900] px-4 py-1 md:max-lg:px-3 text-white font-medium	text-xl' >Post</a>
           <a href='/auth'><AccountCircleOutlinedIcon className={` hover:text-blue-500 ${!isTrasparent && 'text-white'}`} sx={{ fontSize:30 }} /></a>
        </div>
      
@@ -143,9 +143,9 @@ function Navbar() {
         {/* <a href='/' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Service</a> */}
         <a href='/contactus' className='text-xl border-b-[1px] md:max-ml:text-lg  md:max-lg:font-semibold'><ArrowRightAltIcon  style={{color:'#ff6900'}}/>  Contact</a>
         <div className='flex flex-col  gap-2 mt-2 mb-2  '> 
-          <a href='/' className='w-20  hover:bg-[#d07431] bg-[#ff6900] px-4 py-1 md:max-lg:px-3 text-white font-medium	text-xl' >Post</a>
+          <a href='/post' className='w-20  hover:bg-[#d07431] bg-[#ff6900] px-4 py-1 md:max-lg:px-3 text-white font-medium	text-xl' >Post</a>
            <span className='border-y-[1px]'>
-                       <a href='/auth'><AccountCircleOutlinedIcon className={` hover:text-blue-500 `} sx={{ fontSize:30 }} /></a>
+                <a href='/auth'><AccountCircleOutlinedIcon className={` hover:text-blue-500 `} sx={{ fontSize:30 }} /></a>
 
            </span>
        </div>

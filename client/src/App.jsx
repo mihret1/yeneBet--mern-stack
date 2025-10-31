@@ -12,6 +12,8 @@ import Favorite from './pages/Favorite_house'
 import DetailHome from './pages/Detail'
 import ContactUs from './pages/Contact'
 import AboutUs from './pages/AboutUs'
+import Post from './pages/Post'
+
 const App=()=>{
   return(
     <BrowserRouter>
@@ -28,6 +30,8 @@ const App=()=>{
           <Route path='/detail' element={<DetailHome />}/>
           <Route path='/contactus' element={<ContactUs />}/>
           <Route path='/aboutus' element={<AboutUs />}/>
+          <Route path='/post' element={<Post />}/>
+
 
         </Routes>
     <Footer />    
