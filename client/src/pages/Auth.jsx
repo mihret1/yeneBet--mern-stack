@@ -25,12 +25,12 @@ const Auth=()=>{
           <h1 className="text-green-700 text-center text-4xl font-serif py-5 pb-4">{isSignup? 'Login':'Signup'}</h1>
         
         
-          <form className="flex flex-col gap-4 pt-4 ">
+          <form className="flex flex-col gap-4 pt-4  px-1">
             <h1 className="text-2xl font-serif text-green-700 text-center"> {isSignup? 'Login':'Signup'} to Continue </h1>
-             {!isSignup && <input type="text" placeholder="Full name" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-500"/>}
-             {!isSignup && <input placeholder="Phone Number" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-500"/>} 
-               <input placeholder="Email" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-500"/>
-            <input type="text" placeholder="Password" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-500"/>
+             {!isSignup && <input type="text" placeholder="Full name" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-500"/>}
+             {!isSignup && <input placeholder="Phone Number" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-500"/>} 
+               <input placeholder="Email" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-500"/>
+            <input type="text" placeholder="Password" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-500"/>
             {/* <input type="text" placeholder="Comfrim Password" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/> */}
 
             <button className="bg-green-700 hover:bg-green-600 p-2 text-xl text-white">{isSignup?'Login':'Signup'}</button>

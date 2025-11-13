@@ -29,12 +29,12 @@ const Favorite=()=>{
       const [imageNumber,setImageNumber]=useState(1)
       const [fav,setFav]=useState(false)
 
-    const Cardd=(props)=>{
+ const Cardd=(props)=>{
     return(
-      <div className='w-[350px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg  '>
+      <div className='w-[350px] max-xsx:w-[320px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg hover:shadow-md hover:bg-orange-50   '>
         {/* for image part */}
 
-         <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] lg:max-lgg:w-[340px] rounded-t' 
+         <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] max-xsx:w-[320px] lg:max-lgg:w-[340px] rounded-t' 
              style={{
             ...(imageNumber===1 && {backgroundImage:`url(${props.imgg1})`} ), 
             ...(imageNumber===2 && {backgroundImage:`url(${props.imgg2})`} ), 
@@ -46,7 +46,7 @@ const Favorite=()=>{
             <button className=' px-4  rounded-md font-semibold text-white  ' style={{ backgroundColor:`${props.bcolor}`}} >
               {props.bname}
             </button>
-            <div className= ' camera text-white  px-2 rounded-md  '>
+            <div className= ' camera text-white  max-xsx:px-2 rounded-md  '>
               <CameraAltOutlinedIcon sx={{ marginRight:1 }} fontSize='small' /> 4
             </div>
           </div>
@@ -61,7 +61,7 @@ const Favorite=()=>{
             </div>
           }
 
-          <div className=' flex pl-32'>
+          <div className=' flex pl-32 max-xsx:pl-20'>
             <div className='flex items-center text-white pr-16 pt-10'>
                 <button onClick={()=>setImageNumber(1)} style={{...( imageNumber===1 && {color:'#FF6531'})}} ><AdjustOutlinedIcon/></button>
                 <button onClick={()=>setImageNumber(2)} style={{...( imageNumber===2 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/></button> 
@@ -92,14 +92,14 @@ const Favorite=()=>{
              commonly used to demonstrate the visual form of a document or a typeface 
              without.
           </p>
-          <div className='flex justify-between mt-3'>
+          <div className='flex max-xsx:flex-col justify-between mt-3'>
             <div className='flex font-semibold items-center gap-1'><BedIcon />  Bed : {props.bedNo} <div className='h-4 w-[1px] bg-black ml-2'></div> </div>
             <div className='flex font-semibold items-center gap-1'><BathtubIcon />  Bath : {props.bathNo} <div className='h-4 w-[1px] bg-black ml-3'></div> </div>
             <div className='flex font-semibold items-center'><CallSplitIcon />Sq Ft : {props.kare}  </div>
           </div>
           <div className='flex justify-between mt-3 items-center'>
             <span className='text-gray-500 font-semibold'  >{props.date}</span>
-            <span className=' border border-black	rounded-2xl border-dashed px-4 py-1  text-gray-500 font-semibold'><button >Details</button></span>
+            <a href='/detail' className=' border border-black	rounded-2xl border-dashed px-4 py-1  text-gray-500 font-semibold'><button >Details</button></a>
           </div>
          </div>
       
@@ -115,9 +115,9 @@ const Favorite=()=>{
         
         <div className=" w-full">
           
-          <h1 className="text-[#fd6d3d] text-center text-4xl font-serif py-3">Your Favorite Houses <FavoriteIcon fontSize="100px" sx={{ color:'red' }} /> </h1>
+          <h1 className="text-[#fd6d3d] text-center text-4xl max-sm:text-3xl font-serif py-3">Your Favorite Houses <FavoriteIcon fontSize="100px" sx={{ color:'red' }} /> </h1>
           
-          <nav className=" w-full  pt-4 flex flex-row justify-center gap-3    max-ml:grid max-ml:grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 place-items-center text-xl ">
+          <nav className=" w-full  pt-4 flex flex-row justify-center gap-3    max-ml:grid max-ml:grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-3 place-items-center text-xl max-sm:text-lg ">
               <span onClick={()=>{}} className="px-8 py-1 font-medium bg-orange-300   rounded-2xl ">Villa</span>
               <span  className="px-4 py-1 bg-orange-300   rounded-2xl font-medium ">Guest House</span>
               <span className="px-4 py-1 bg-orange-300   rounded-2xl font-medium ">Condominium</span>

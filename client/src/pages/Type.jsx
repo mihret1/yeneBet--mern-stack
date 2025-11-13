@@ -29,12 +29,12 @@ const Type=()=>{
       const [imageNumber,setImageNumber]=useState(1)
       const [fav,setFav]=useState(false)
 
-    const Cardd=(props)=>{
+  const Cardd=(props)=>{
     return(
-      <div className='w-[350px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg  '>
+      <div className='w-[350px] max-xsx:w-[320px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg hover:shadow-md hover:bg-orange-50   '>
         {/* for image part */}
 
-         <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] lg:max-lgg:w-[340px] rounded-t' 
+         <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] max-xsx:w-[320px] lg:max-lgg:w-[340px] rounded-t' 
              style={{
             ...(imageNumber===1 && {backgroundImage:`url(${props.imgg1})`} ), 
             ...(imageNumber===2 && {backgroundImage:`url(${props.imgg2})`} ), 
@@ -46,7 +46,7 @@ const Type=()=>{
             <button className=' px-4  rounded-md font-semibold text-white  ' style={{ backgroundColor:`${props.bcolor}`}} >
               {props.bname}
             </button>
-            <div className= ' camera text-white  px-2 rounded-md  '>
+            <div className= ' camera text-white  max-xsx:px-2 rounded-md  '>
               <CameraAltOutlinedIcon sx={{ marginRight:1 }} fontSize='small' /> 4
             </div>
           </div>
@@ -61,7 +61,7 @@ const Type=()=>{
             </div>
           }
 
-          <div className=' flex pl-32'>
+          <div className=' flex pl-32 max-xsx:pl-20'>
             <div className='flex items-center text-white pr-16 pt-10'>
                 <button onClick={()=>setImageNumber(1)} style={{...( imageNumber===1 && {color:'#FF6531'})}} ><AdjustOutlinedIcon/></button>
                 <button onClick={()=>setImageNumber(2)} style={{...( imageNumber===2 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/></button> 
@@ -92,14 +92,14 @@ const Type=()=>{
              commonly used to demonstrate the visual form of a document or a typeface 
              without.
           </p>
-          <div className='flex justify-between mt-3'>
+          <div className='flex max-xsx:flex-col justify-between mt-3'>
             <div className='flex font-semibold items-center gap-1'><BedIcon />  Bed : {props.bedNo} <div className='h-4 w-[1px] bg-black ml-2'></div> </div>
             <div className='flex font-semibold items-center gap-1'><BathtubIcon />  Bath : {props.bathNo} <div className='h-4 w-[1px] bg-black ml-3'></div> </div>
             <div className='flex font-semibold items-center'><CallSplitIcon />Sq Ft : {props.kare}  </div>
           </div>
           <div className='flex justify-between mt-3 items-center'>
             <span className='text-gray-500 font-semibold'  >{props.date}</span>
-            <span className=' border border-black	rounded-2xl border-dashed px-4 py-1  text-gray-500 font-semibold'><button >Details</button></span>
+            <a href='/detail' className=' border border-black	rounded-2xl border-dashed px-4 py-1  text-gray-500 font-semibold'><button >Details</button></a>
           </div>
          </div>
       
@@ -116,7 +116,7 @@ const Type=()=>{
         <div className=" w-full">
           
          
-         <h1 className="text-center text-4xl font-serif text-orange-800 pt-2 pb-4 font-semibold">Apartment</h1>
+         <h1 className="text-center text-4xl max-sm:text-3xl font-serif text-orange-800 pt-2 pb-4 font-semibold">Apartment</h1>
           <div className="px-1 flex flex-row xsx:justify-items-center max-sm:mt-6  max-xl:grid max-sm:grid-cols-3 sm:max-ml:grid-cols-4 ml:max-xl:grid-cols-5  gap-3 xl:gap-6 justify-center w-full  text-lg  pt-4"> 
             <span><input type="checkbox" /> Addis Abeba</span>
              <span> <input type="checkbox" /> Hawassa</span>

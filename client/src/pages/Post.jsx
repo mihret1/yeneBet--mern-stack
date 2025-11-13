@@ -35,39 +35,39 @@ const Post=()=>{
           <h1 className="text-green-700 text-center text-3xl font-serif py-5 pb-8">Submit your Property</h1>
           
            
-          <form className="flex flex-col gap-6 pt-4 ">
+          <form className="flex flex-col gap-6 pt-4 px-2 ">
             <h1 className="text-2xl font-serif text-green-700 text-center">Send  Your Property to us</h1>
-            <input type="text" placeholder="Full name" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-             <input placeholder="Phone Number" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-            <input placeholder="Email" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-           <input type="text" placeholder="City" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-            <input type="text" placeholder="Sub City" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-           <input type="text" placeholder="Price" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-           <input type="text" placeholder="Title" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-           <input type="text" placeholder="Price" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-           <input type="text" placeholder="Area of House" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+            <input type="text" placeholder="Full name" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+             <input placeholder="Phone Number" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+            <input placeholder="Email" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+           <input type="text" placeholder="City" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+            <input type="text" placeholder="Sub City" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+           <input type="text" placeholder="Price" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+           <input type="text" placeholder="Title" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+           <input type="text" placeholder="Price" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+           <input type="text" placeholder="Area of House" className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
            
            <div className="grid grid-cols-2 max-md:grid-cols-1 gap-2">
-              <input type="text" placeholder="Number of bedroom" className="border  h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-              <input type="text" placeholder="Number of room" className="border  h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-              <input type="text" placeholder="Number of bathroom" className="border  h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-              <input type="text" placeholder="Number of Garage" className="border  h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+              <input type="text" placeholder="Number of bedroom" className="border w-[450px] max-sm:w-[300px]   h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+              <input type="text" placeholder="Number of room" className="border w-[450px] max-sm:w-[300px]  h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+              <input type="text" placeholder="Number of bathroom" className="border w-[450px] max-sm:w-[300px]  h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+              <input type="text" placeholder="Number of Garage" className="border w-[450px] max-sm:w-[300px]  h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
 
            </div>
-            <div className="flex gap-7 py-3">
+            <div className="flex gap-7 max-sm:grid max-md:grid-cols-2 max-md:gap-3  py-3">
               <span className="flex  items-center gap-2  text-lg"><input className="text-orange-600 w-4 h-4" type='checkbox'/> Swimming pool </span>
                <span className="flex  items-center gap-2  text-lg">  <input className="text-orange-600 w-4 h-4" type='checkbox'/>Parking</span>
               <span className="flex  items-center gap-2  text-lg"> <input className="text-orange-600 w-4 h-4" type='checkbox'/> Internet</span>
               <span className="flex  items-center gap-2  text-lg"><input className="text-orange-600 w-4 h-4" type='checkbox'/>Balcony </span>
 
             </div>
-            <input type="text" placeholder="addtional thing..." className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+            <input type="text" placeholder="addtional thing..." className="border w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
             <div className="flex gap-5 py-2 font-semibold"> 
               <span className="text-xl text-green-600">  For Sale <input className="w-4 h-4" type="radio" name='type' value='sale' /></span>
               <span className="text-xl text-orange-600">  For Rent <input type="radio" className="w-4 h-4" name='type' value='rent' /></span>
             </div>
 
-            <textarea placeholder="Description about home"  className="border h-32 w-[550px] max-sm:w-[315px]  px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+            <textarea placeholder="Description about home"  className="border h-32 w-[550px] max-sm:w-[300px]  px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
              
               <label className="block">
               <span className="text-gray-700 font-medium">Upload Video</span>

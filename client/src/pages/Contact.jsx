@@ -139,13 +139,13 @@ const ContactUs=()=>{
                      <span>24/hr</span> 
              </div>
            </div>
-          <form className="flex flex-col gap-4 pt-14 ">
-            <h1 className="text-3xl font-serif text-green-700">For your any idea</h1>
-            <input type="text" placeholder="Full name" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
-             <input placeholder="Phone Number" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
-            <input placeholder="Email" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
-            <textarea placeholder="Comment" className="border w-[450px] max-sm:w-[315px]  px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
-             <button className="bg-green-700 hover:bg-green-600 p-2 text-xl text-white">Submit</button>
+          <form className="flex flex-col gap-4 pt-14  ">
+            <h1 className="text-3xl font-serif px-3 text-green-700">For your any idea</h1>
+            <input type="text" placeholder="Full name" className="border ml-1  w-[450px] max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
+             <input placeholder="Phone Number" className="border w-[450px] ml-1 max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
+            <input placeholder="Email" className="border w-[450px] ml-1 max-sm:w-[300px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
+            <textarea placeholder="Comment" className="border ml-1 w-[450px] max-sm:w-[300px]  px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
+             <button className="bg-green-700 hover:bg-green-600 p-2 text-xl text-white mx-2">Submit</button>
          
           </form>
 

@@ -25,15 +25,15 @@ const AboutUs=()=>{
         <div className=" w-full flex flex-col gap-4 px-3 ">
           
           <h1 className="text-green-700 text-center text-4xl font-serif py-5 pb-8">About Us</h1>
-          <p className="text-3xl text-center font-serif "> We have any type of house that you can rent and buy</p>
+          <p className="text-3xl  text-center font-serif "> We have any type of house that you can rent and buy</p>
           
-          <p className="text-xl text-center lg:px-20 "> 
+          <p className="text-xl max-sm:lg text-center lg:px-20 "> 
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type 
             specimen book. It has survived not only five centuries, but also the leap into electronic
              typesetting</p>
-          <p className="text-xl text-center lg:px-20"> 
+          <p className="text-xl  max-sm:lg text-center lg:px-20"> 
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type 
@@ -42,9 +42,9 @@ const AboutUs=()=>{
 
             <div className="mt-16"  style={{ backgroundImage:`url(${t3})`,backgroundSize:'cover',backgroundRepeat:'no-repeat' }}>
                 <div className="Two w-full text-white py-20 flex flex-col  gap-5 items-center">
-                    <h1 className="text-4xl text-white "> <HouseIcon  sx={{ color:'green', fontSize:'40px'  }} /> All Type of Houses We Have <HouseIcon  sx={{ color:'green', fontSize:'40px'}}/></h1>
-                    <div className="flex gap-16 pl-7">
-                        <div className="flex flex-col text-2xl gap-2">
+                    <h1 className="text-4xl max-sm:text-3xl max-sm:text-center text-white "> <span className="max-sm:hidden"> <HouseIcon  sx={{ color:'green', fontSize:'40px'  }} /> </span>All Type of Houses We Have <span className="max-sm:hidden"><HouseIcon  sx={{ color:'green', fontSize:'40px'}}/></span></h1>
+                    <div className="flex max-sm:flex-col gap-16 max-sm:gap-5 pl-7">
+                        <div className="flex flex-col text-2xl  gap-2">
                             <span> <FiberManualRecordIcon sx={{ color:'#ff6900' }}/> Apartments 
                                 {/* <br/><span className="text-lg"><FiberManualRecordIcon sx={{ color:'#ff6900' }}/> hello</span> */}
                                 </span> 
