@@ -1,10 +1,13 @@
-
-const express=require('express')
-
+const express= require('express')
 const app=express()
-require('dotenv').config
+const db= require('mongoose')
+const PORT=2000
+const URL='mongodb://localhost'
 
-const PORT=process.env.PORT || 3000
-const URL=process.env.URL 
+
+db.connect()
 
 
+app.listen(PORT,()=>{
+    console.log('backend ')
+})

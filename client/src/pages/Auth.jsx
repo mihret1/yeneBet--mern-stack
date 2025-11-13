@@ -33,17 +33,17 @@ const Auth=()=>{
             <input type="text" placeholder="Password" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-500"/>
             {/* <input type="text" placeholder="Comfrim Password" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/> */}
 
-            <button className="bg-green-700 p-2 text-lg text-white">{isSignup?'Login':'Signup'}</button>
+            <button className="bg-green-700 hover:bg-green-600 p-2 text-xl text-white">{isSignup?'Login':'Signup'}</button>
             {
               
               !isSignup ? 
-                <p className="text-right text-lg font-serif">already have account? <button type="button" onClick={()=>setIsSignup(e=>!e)} className="text-blue-600">Login</button> </p>
+                <p className="text-right text-lg font-serif ">already have account? <button type="button" onClick={()=>setIsSignup(e=>!e)} className="text-blue-600 hover:text-blue-400">Login</button> </p>
                      : 
-                 <p className="text-right text-lg font-serif">Dont you have account? <button type='button' onClick={()=>setIsSignup(e=>!e)} className="text-blue-600">Signup</button> </p>             
+                 <p className="text-right text-lg font-serif">Dont you have account? <button type='button' onClick={()=>setIsSignup(e=>!e)} className="text-blue-600 hover:text-blue-400">Signup</button> </p>             
               
               }          
           </form>
-          <a className="text-blue-600 mt-[7%] text-xl" href="/"><KeyboardBackspaceIcon /> Back Home</a>
+          <a className="text-blue-600 hover:text-blue-400 mt-[7%] text-xl" href="/"><KeyboardBackspaceIcon /> Back Home</a>
        </div>  
 
        

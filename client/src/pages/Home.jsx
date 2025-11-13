@@ -96,10 +96,10 @@ function Home() {
   
   const Cardd=(props)=>{
     return(
-      <div className='w-[350px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg hover:shadow-md hover:bg-orange-50   '>
+      <div className='w-[350px] max-xsx:w-[320px] lg:max-lgg:w-[340px] shadow-2xl rounded-lg hover:shadow-md hover:bg-orange-50   '>
         {/* for image part */}
 
-         <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] lg:max-lgg:w-[340px] rounded-t' 
+         <div onMouseEnter={()=>setImageArrow(true)} onMouseLeave={()=>setImageArrow(false)}  className='flex flex-col justify-between p-2 h-[190px] bg-cover	w-[350px] max-xsx:w-[320px] lg:max-lgg:w-[340px] rounded-t' 
              style={{
             ...(imageNumber===1 && {backgroundImage:`url(${props.imgg1})`} ), 
             ...(imageNumber===2 && {backgroundImage:`url(${props.imgg2})`} ), 
@@ -111,7 +111,7 @@ function Home() {
             <button className=' px-4  rounded-md font-semibold text-white  ' style={{ backgroundColor:`${props.bcolor}`}} >
               {props.bname}
             </button>
-            <div className= ' camera text-white  px-2 rounded-md  '>
+            <div className= ' camera text-white  max-xsx:px-2 rounded-md  '>
               <CameraAltOutlinedIcon sx={{ marginRight:1 }} fontSize='small' /> 4
             </div>
           </div>
@@ -126,7 +126,7 @@ function Home() {
             </div>
           }
 
-          <div className=' flex pl-32'>
+          <div className=' flex pl-32 max-xsx:pl-20'>
             <div className='flex items-center text-white pr-16 pt-10'>
                 <button onClick={()=>setImageNumber(1)} style={{...( imageNumber===1 && {color:'#FF6531'})}} ><AdjustOutlinedIcon/></button>
                 <button onClick={()=>setImageNumber(2)} style={{...( imageNumber===2 && {color:'#FF6531'})}}> <AdjustOutlinedIcon/></button> 
@@ -157,7 +157,7 @@ function Home() {
              commonly used to demonstrate the visual form of a document or a typeface 
              without.
           </p>
-          <div className='flex justify-between mt-3'>
+          <div className='flex max-xsx:flex-col justify-between mt-3'>
             <div className='flex font-semibold items-center gap-1'><BedIcon />  Bed : {props.bedNo} <div className='h-4 w-[1px] bg-black ml-2'></div> </div>
             <div className='flex font-semibold items-center gap-1'><BathtubIcon />  Bath : {props.bathNo} <div className='h-4 w-[1px] bg-black ml-3'></div> </div>
             <div className='flex font-semibold items-center'><CallSplitIcon />Sq Ft : {props.kare}  </div>
@@ -179,7 +179,7 @@ function Home() {
         <div className='insideOne'>
           <Navbar />
           <div >
-              <div className=' flex flex-col items-center px-[15%] gap-7 pt-[3%]'>
+              <div className=' flex flex-col items-center max-sm:px-[5%] px-[15%] gap-7 pt-[3%]'>
                 <h1 className=' font-bold text-3xl text-center text-white '> Sale Buy and Rent Your Gorgeous Dream Houses in Ethiopia</h1>
                 <p className='text-white font-medium text-center text-lg'> 
                     Sale, buy and rent beutifull and secured houses in ethiopia in wherever you want in addis abeba.
@@ -234,8 +234,8 @@ function Home() {
                   </span>  
                 </div>
 
-                <div className=' h-20 bg-white shadow-xl  flex  flex-row p-5  sm:max-ml:px-2  max-sm:flex-col max-sm:h-32 max-sm:gap-2 ' >
-                  <div className='border-black border-2 w-96 sm:max-lg:w-64 h-10 flex flex-row justify-center items-center xs:max-sm:w-[98%]'>
+                <div className=' h-20 bg-white shadow-xl  flex  flex-row max-xsx:p-2 xsx:p-5    sm:max-ml:px-2  max-sm:flex-col max-sm:h-32 max-sm:gap-2 ' >
+                  <div className='border-black border-2 w-96 max-xsx:w-64 xsx:max-sm:w-72 sm:max-lg:w-64 h-10 flex flex-row justify-center items-center xs:max-sm:w-[98%]'>
                   {!location && <SearchSharpIcon /> }
                     <input 
                     onChange={(e)=>setLocation(e.target.value)}
@@ -245,7 +245,7 @@ function Home() {
                     />
                     {location && <IconButton onClick={()=>setLocation('')}> <CloseIcon /></IconButton>}
                   </div>
-                  <div className='border-black border-2 w-96 sm:max-lg:w-64 h-10  flex flex-row sm:max-ml:justify-start justify-center items-center font-semibold xs:max-sm:w-[96%]'>
+                  <div className='border-black border-2 w-96 max-xsx:w-64 xsx:max-sm:w-72 sm:max-lg:w-64 h-10  flex flex-row sm:max-ml:justify-start justify-center items-center font-semibold xs:max-sm:w-[96%]'>
                   <input
                     value={money}
                     onChange={(e)=>setMoney(e.target.value)} 
@@ -265,14 +265,14 @@ function Home() {
       </section>
 
                  
-      <section className='partTwo h-[440px] m-8 xs:max-sm:h-[900px]'>
+      <section className='partTwo h-[460px] m-8 max-sm:h-[900px]'>
         <div className='insideTwo   '>
-          <div className=' Two w-[100%] h-[440px] xs:max-sm:h-[900px] text-white flex flex-col gap-6 justify-center items-center '>
+          <div className=' Two w-[100%] h-[440px] max-sm:h-[900px] text-white flex flex-col gap-6 justify-center items-center '>
             <h1 className='text-2xl font-semibold'>How it Work</h1>
-            <p className='w-[60%] text-center'>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. 
+            <p className='w-[60%] max-sm:w-[75%] text-center'>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. 
               Lorem ipsum may be used as a placeholder before the final copy is available.</p>
-            <button className='px-8 py-2 text-lg font-semibold  bg-gradient-to-r  from-orange-800 to-orange-500 hover:from-orange-500 hover:to-orange-800  rounded-3xl  '>Submit Properties</button>
-            <div className='flex flex-row gap-5 xs:max-sm:flex-col xs:max-sm:gap-1'>
+            <a href='/post' className='px-8 py-2 text-lg font-semibold  bg-gradient-to-r  from-orange-800 to-orange-500 hover:from-orange-500 hover:to-orange-800  rounded-3xl  '>Submit Properties</a>
+            <div className='flex flex-row gap-5 max-sm:flex-col max-sm:gap-1'>
               <div className='w-36 h-28 border-[1px] rounded-tl-3xl rounded-br-3xl flex items-center justify-center'>
                 <HouseOutlinedIcon sx={{color:'white', fontSize:60}}/>
               </div>
@@ -291,7 +291,7 @@ function Home() {
 
      <section className='px-3 py-2  flex flex-col items-center  '>
       <h1 className='font-bold text-3xl pb-5'> All Type Of Home</h1>
-       <div className='Type   grid grid-cols-3 xs:max-sm:grid-cols-1 sm:max-lg:grid-cols-2 justify-items-center	 justify-center items-center  '>
+       <div className='Type   grid grid-cols-3 max-sm:grid-cols-1 sm:max-lg:grid-cols-2 justify-items-center	 justify-center items-center  '>
 
            <div  className='cursor-pointer  hover:scale-105 transition-transform duration-300' >
              Apartment
@@ -428,22 +428,23 @@ function Home() {
       
       
        </div>
+         <a href='/allhouse' className='w-[150px] bg-orange-500 text-center hover:bg-orange-400 text-white py-1 px-2 text-xl my-5 rounded-md'>All Houses </a>
   
      </section>
 
      <section className='mt-28  relative z-10 w-full  flex flex-col   gap-4 justify-center h-[450px] bg-no-repeat  bg-cover text-white  '  style={{ backgroundImage:`url(${t9})`}}>
         <p className=' absolute top-20 w-full text-pretty text-center text-3xl font-semibold'>All Towns You can find Your Home</p>
-        <p className='absolute top-32 w-full text-lg text-center'>we have home in every country you want.  </p>
+        <p className='absolute top-32 w-full text-lg text-center'>We have home in every country you want.  </p>
         <div className='absolute  top-48 left-0 w-full  flex flex-row  justify-around gap-6 overflow-x-scroll scroll-smooth no-scrollbar  whitespace-nowrap  '>
          {t.map((e,k)=>(
 
-          <div  key={k} className='hover:scale-105 transition-transform duration-300 shrink-0 flex flex-col justify-end  h-[320px] w-56  rounded-lg  ' style={{ backgroundImage:`url(${t10})` }}>
+          <a href='/town'  key={k} className='hover:scale-105 cursor-pointer transition-transform duration-300 shrink-0 flex flex-col justify-end  h-[320px] w-56  rounded-lg  ' style={{ backgroundImage:`url(${t10})` }}>
              <div className='insideThree flex flex-col  justify-center items-center rounded-b-lg h-32 '>
                   <p className='text-xl font-semibold '>Addis Abeba</p>
                   <p className=''>12+ for rent & 20+ for sale </p>
 
              </div>
-          </div>
+          </a>
          ))}
           
          
@@ -684,7 +685,8 @@ function Home() {
       
       
        </div>
-  
+           <a href='/allhouse' className='w-[150px] bg-orange-500 text-center hover:bg-orange-400 text-white py-1 px-2 text-xl my-5 rounded-md'>All Houses </a>
+
      </section>
  
   </div>

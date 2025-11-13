@@ -145,7 +145,7 @@ const ContactUs=()=>{
              <input placeholder="Phone Number" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
             <input placeholder="Email" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
             <textarea placeholder="Comment" className="border w-[450px] max-sm:w-[315px]  px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-800"/>
-             <button className="bg-green-700 p-2 text-lg text-white">Submit</button>
+             <button className="bg-green-700 hover:bg-green-600 p-2 text-xl text-white">Submit</button>
          
           </form>
 

@@ -32,19 +32,19 @@ const Post=()=>{
         
         <div className=" w-full flex flex-col justify-center items-center gap-2">
           
-          <h1 className="text-green-700 text-center text-4xl font-serif py-5 pb-8">Contact Us</h1>
+          <h1 className="text-green-700 text-center text-3xl font-serif py-5 pb-8">Submit your Property</h1>
           
            
           <form className="flex flex-col gap-6 pt-4 ">
-            <h1 className="text-2xl font-serif text-green-700 text-center">Log In to Continue Your Property Journey</h1>
-            <input type="text" placeholder="Full name" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-4b 00"/>
+            <h1 className="text-2xl font-serif text-green-700 text-center">Send  Your Property to us</h1>
+            <input type="text" placeholder="Full name" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
              <input placeholder="Phone Number" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
             <input placeholder="Email" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
            <input type="text" placeholder="City" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
             <input type="text" placeholder="Sub City" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-           <input type="text" placeholder="price" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-           <input type="text" placeholder="title" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
-           <input type="text" placeholder="price" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+           <input type="text" placeholder="Price" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+           <input type="text" placeholder="Title" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
+           <input type="text" placeholder="Price" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
            <input type="text" placeholder="Area of House" className="border w-[450px] max-sm:w-[315px] h-10 px-3 text-lg border-orange-500 placeholder-gray-700 outline-[0.5px] outline-amber-400"/>
            
            <div className="grid grid-cols-2 max-md:grid-cols-1 gap-2">
@@ -114,7 +114,7 @@ const Post=()=>{
            
   
              
-             <button className="bg-green-700 p-2 text-xl text-white">Submit</button>
+             <button className="bg-green-700 hover:bg-green-600 p-2 text-xl text-white">Submit</button>
          
           </form>
 
